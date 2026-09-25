@@ -1,0 +1,1393 @@
+/* ============================================
+   БОГИНЯ СОЦСЕТЕЙ — стили страниц глав
+   ============================================ */
+
+/* --------------------------------------------
+   ПРОГРЕСС-БАР ЧТЕНИЯ
+   -------------------------------------------- */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  transition: width 0.1s;
+  box-shadow: 0 0 10px var(--accent);
+}
+
+/* --------------------------------------------
+   КОНТЕЙНЕР ГЛАВЫ
+   -------------------------------------------- */
+.chapter-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+
+.chapter-header {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.chapter-label {
+  display: inline-block;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.chapter-header h1 {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2), var(--gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.chapter-intro {
+  font-size: 1.15rem;
+  color: var(--text-dim);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* --------------------------------------------
+   СЕКЦИИ
+   -------------------------------------------- */
+.chapter-section {
+  margin-bottom: 60px;
+}
+
+.chapter-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: var(--accent);
+  border-left: 4px solid var(--accent-2);
+  padding-left: 20px;
+}
+
+.chapter-section h3 {
+  font-size: 1.25rem;
+  margin: 30px 0 15px;
+  color: var(--text);
+  letter-spacing: 1px;
+}
+
+.chapter-section p {
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.chapter-section strong {
+  color: var(--gold);
+}
+
+.chapter-section blockquote {
+  border-left: 4px solid var(--accent);
+  background: var(--bg-2);
+  padding: 20px 25px;
+  margin: 25px 0;
+  border-radius: 0 12px 12px 0;
+  font-style: italic;
+  color: var(--text-dim);
+}
+
+.chapter-section ul,
+.chapter-section ol {
+  margin: 15px 0 20px 25px;
+  color: var(--text);
+}
+
+.chapter-section li {
+  margin-bottom: 8px;
+  line-height: 1.7;
+}
+
+/* --------------------------------------------
+   КОЛЛАУТЫ (врезки)
+   -------------------------------------------- */
+.callout {
+  padding: 20px 25px;
+  border-radius: 12px;
+  margin: 20px 0;
+  border-left: 4px solid var(--border);
+  background: var(--bg-2);
+}
+
+.callout-warning {
+  background: rgba(239, 68, 68, 0.1);
+  border-color: var(--danger);
+}
+
+.callout-success {
+  background: rgba(34, 197, 94, 0.1);
+  border-color: var(--success);
+}
+
+/* --------------------------------------------
+   ТАБЛИЦА КЛЮЧЕЙ 💎🥇🥈🥉🟤
+   -------------------------------------------- */
+.keys-table {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 30px 0;
+}
+
+.key-row {
+  display: grid;
+  grid-template-columns: 60px 200px 120px 1fr;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: var(--bg-2);
+  border-radius: 12px;
+  border: 2px solid var(--border);
+  transition: all 0.3s;
+}
+
+.key-row:hover {
+  transform: translateX(10px);
+  box-shadow: var(--glow);
+}
+
+.key-diamond { border-color: var(--accent); }
+.key-gold    { border-color: var(--gold); }
+.key-silver  { border-color: #94a3b8; }
+.key-bronze  { border-color: #b45309; }
+.key-copper  { border-color: #78350f; }
+
+.key-icon {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.key-level {
+  font-weight: 700;
+}
+
+.key-count {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+}
+
+.key-example {
+  color: var(--text-dim);
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+/* --------------------------------------------
+   СХЕМА ИЗ ДВУХ КАРТОЧЕК (личное / рабочее)
+   -------------------------------------------- */
+.scheme-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.scheme-card {
+  background: var(--bg-2);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  padding: 25px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.scheme-card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--glow);
+}
+
+.scheme-card h3 {
+  color: var(--accent);
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.scheme-card p {
+  margin: 5px 0;
+  color: var(--text-dim);
+}
+
+/* --------------------------------------------
+   СЕТКА НАМЕРЕНИЙ
+   -------------------------------------------- */
+.intent-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.intent-card {
+  background: var(--bg-2);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  padding: 25px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.intent-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-5px);
+  box-shadow: var(--glow);
+}
+
+.intent-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.intent-card h3 {
+  margin-bottom: 10px;
+  color: var(--accent);
+}
+
+.intent-card p {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+}
+
+/* --------------------------------------------
+   СЕТКА БРЕНД / КЛЮЧИ
+   -------------------------------------------- */
+.brand-key-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.brand-key-card {
+  background: var(--bg-2);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  padding: 25px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.brand-key-card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--glow);
+}
+
+.brand-key-card h3 {
+  color: var(--accent);
+  margin-bottom: 15px;
+}
+
+.brand-key-card p {
+  margin: 5px 0;
+  color: var(--text-dim);
+}
+
+/* --------------------------------------------
+   ВОРОНКА ЧАСТОТНОСТИ
+   -------------------------------------------- */
+.funnel-scheme {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.funnel-level {
+  background: var(--bg-2);
+  border-left: 4px solid var(--accent);
+  padding: 15px 20px;
+  border-radius: 0 12px 12px 0;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.funnel-level:nth-child(1) { margin-right: 0; }
+.funnel-level:nth-child(2) { margin-right: 40px; }
+.funnel-level:nth-child(3) { margin-right: 80px; }
+.funnel-level:nth-child(4) { margin-right: 120px; }
+
+.funnel-level:hover {
+  border-left-color: var(--gold);
+  transform: translateX(10px);
+}
+
+.funnel-level span {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+/* --------------------------------------------
+   ЦЕПОЧКА (chain-scheme)
+   -------------------------------------------- */
+.chain-scheme {
+  background: var(--bg-2);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  padding: 30px;
+  margin: 30px 0;
+}
+
+.chain-scheme p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.chain-scheme p:has(↓) {
+  text-align: center;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* --------------------------------------------
+   ЭЛЕМЕНТЫ ПРОФИЛЯ
+   -------------------------------------------- */
+.profile-elements {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin: 30px 0;
+}
+
+.profile-element {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 15px 20px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.profile-element:hover {
+  border-color: var(--accent);
+  box-shadow: var(--glow);
+  transform: translateX(5px);
+}
+
+.profile-element span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #fff;
+  border-radius: 50%;
+  font-weight: 900;
+  font-size: 0.85rem;
+}
+
+/* --------------------------------------------
+   ФОРМУЛА БИО
+   -------------------------------------------- */
+.bio-formula {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.bio-item {
+  background: var(--bg-2);
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.bio-item:hover {
+  border-color: var(--gold);
+  transform: translateY(-5px);
+}
+
+.bio-item h3 {
+  color: var(--accent);
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.bio-item p {
+  color: var(--text);
+  font-weight: 600;
+  margin: 0;
+}
+
+/* --------------------------------------------
+   ТРИ СЛОЯ КОНТЕНТА
+   -------------------------------------------- */
+.three-layers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.layer-card {
+  background: var(--bg-2);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  padding: 30px 25px;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.layer-card:hover {
+  border-color: var(--accent-2);
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.4);
+}
+
+.layer-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #fff;
+  border-radius: 50%;
+  font-weight: 900;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+}
+
+.layer-card h3 {
+  color: var(--text);
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.layer-card p {
+  color: var(--text-dim);
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+/* --------------------------------------------
+   ФУНКЦИИ КОНТЕНТА
+   -------------------------------------------- */
+.functions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.function-card {
+  background: var(--bg-2);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  padding: 25px;
+  transition: all 0.3s;
+}
+
+.function-card:hover {
+  transform: translateY(-5px);
+}
+
+.fn-attract { border-color: var(--accent); }
+.fn-attract:hover { box-shadow: 0 0 25px rgba(0, 212, 255, 0.4); }
+
+.fn-retain { border-color: var(--accent-2); }
+.fn-retain:hover { box-shadow: 0 0 25px rgba(168, 85, 247, 0.4); }
+
+.fn-trust { border-color: var(--success); }
+.fn-trust:hover { box-shadow: 0 0 25px rgba(34, 197, 94, 0.4); }
+
+.fn-action { border-color: var(--gold); }
+.fn-action:hover { box-shadow: 0 0 25px rgba(251, 191, 36, 0.4); }
+
+.fn-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.function-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.fn-attract h3 { color: var(--accent); }
+.fn-retain h3 { color: var(--accent-2); }
+.fn-trust h3 { color: var(--success); }
+.fn-action h3 { color: var(--gold); }
+
+.function-card ul {
+  margin: 15px 0 0 20px;
+  color: var(--text-dim);
+  font-size: 0.9rem;
+}
+
+.function-card li {
+  margin-bottom: 5px;
+}
+
+/* --------------------------------------------
+   ПОЛНАЯ ВОРОНКА
+   -------------------------------------------- */
+.funnel-full {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.funnel-step {
+  background: var(--bg-2);
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 15px 30px;
+  font-weight: 700;
+  text-align: center;
+  min-width: 300px;
+  transition: all 0.3s;
+}
+
+.funnel-step:hover {
+  border-color: var(--accent);
+  box-shadow: var(--glow);
+  transform: scale(1.05);
+}
+
+.funnel-final {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #fff;
+  border: none;
+}
+
+.funnel-arrow {
+  color: var(--accent);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* --------------------------------------------
+   ПИЛЛАРЫ
+   -------------------------------------------- */
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.pillar-card {
+  background: var(--bg-2);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  padding: 25px 20px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.pillar-card:hover {
+  border-color: var(--accent-2);
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.4);
+}
+
+.pillar-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #fff;
+  border-radius: 50%;
+  font-weight: 900;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.pillar-card h3 {
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: var(--accent);
+}
+
+.pillar-card p {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+}
+
+/* --------------------------------------------
+   ТРЕУГОЛЬНИК
+   -------------------------------------------- */
+.triangle-scheme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 30px 0;
+}
+
+.triangle-item {
+  background: var(--bg-2);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  padding: 25px 40px;
+  text-align: center;
+  min-width: 280px;
+  transition: all 0.3s;
+}
+
+.triangle-item:hover {
+  border-color: var(--gold);
+  box-shadow: 0 0 25px rgba(251, 191, 36, 0.4);
+}
+
+.triangle-item h3 {
+  color: var(--gold);
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+
+.triangle-item p {
+  color: var(--text-dim);
+  margin: 0;
+}
+
+.triangle-arrow {
+  color: var(--gold);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* --------------------------------------------
+   СТРУКТУРА КЕЙСА
+   -------------------------------------------- */
+.case-structure {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.case-step {
+  background: var(--bg-2);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 12px 12px 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: all 0.3s;
+}
+
+.case-step:hover {
+  border-left-color: var(--gold);
+  transform: translateX(5px);
+}
+
+.case-step strong {
+  color: var(--accent);
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.case-step span {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+}
+
+/* --------------------------------------------
+   КАЛЕНДАРЬ
+   -------------------------------------------- */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  margin: 30px 0;
+}
+
+.cal-day {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.cal-day:hover {
+  border-color: var(--accent);
+  box-shadow: var(--glow);
+}
+
+.cal-day strong {
+  display: block;
+  color: var(--accent);
+  font-size: 1rem;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
+
+.cal-day span {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+}
+
+/* --------------------------------------------
+   ЦЕЛИ ПУБЛИКАЦИЙ
+   -------------------------------------------- */
+.goals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.goal-card {
+  background: var(--bg-2);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  padding: 25px;
+  transition: all 0.3s;
+}
+
+.goal-card:hover {
+  border-color: var(--accent-2);
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.3);
+}
+
+.goal-card h3 {
+  color: var(--accent-2);
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.goal-card p {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+}
+
+/* --------------------------------------------
+   ФОРМУЛА
+   -------------------------------------------- */
+.formula-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: 30px 0;
+}
+
+.formula-step {
+  background: var(--bg-2);
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 15px 30px;
+  text-align: center;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  transition: all 0.3s;
+}
+
+.formula-step:hover {
+  border-color: var(--gold);
+  box-shadow: 0 0 25px rgba(251, 191, 36, 0.3);
+  transform: scale(1.03);
+}
+
+.formula-step strong {
+  color: var(--gold);
+  font-size: 0.95rem;
+  letter-spacing: 2px;
+}
+
+.formula-step span {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+}
+
+.formula-arrow {
+  color: var(--gold);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+/* --------------------------------------------
+   СИГНАЛЫ АЛГОРИТМОВ
+   -------------------------------------------- */
+.signals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin: 30px 0;
+}
+
+.signal-item {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 15px 20px;
+  text-align: center;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.signal-item:hover {
+  border-color: var(--accent);
+  box-shadow: var(--glow);
+  transform: translateY(-3px);
+}
+
+/* --------------------------------------------
+   ГРАФИК УДЕРЖАНИЯ
+   -------------------------------------------- */
+.retention-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 30px 0;
+  background: var(--bg-2);
+  padding: 25px;
+  border-radius: 16px;
+  border: 2px solid var(--border);
+}
+
+.retention-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.retention-time {
+  min-width: 70px;
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.retention-bar {
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+
+.retention-row:hover .retention-bar {
+  transform: scaleX(1.02);
+  transform-origin: left;
+}
+
+/* --------------------------------------------
+   СТАТИСТИКА
+   -------------------------------------------- */
+.stats-example {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 25px 0;
+}
+
+.stat-example-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: var(--bg-2);
+  border-radius: 10px;
+  border-left: 4px solid var(--border);
+  transition: all 0.3s;
+}
+
+.stat-example-row.stat-best {
+  border-left-color: var(--gold);
+  background: linear-gradient(90deg, var(--bg-2), rgba(251, 191, 36, 0.05));
+}
+
+.stat-example-row:hover {
+  transform: translateX(5px);
+}
+
+/* --------------------------------------------
+   ТЕСТЫ
+   -------------------------------------------- */
+.test-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.test-card {
+  background: var(--bg-2);
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.test-card:hover {
+  border-color: var(--accent-2);
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+}
+
+.test-card h3 {
+  color: var(--accent-2);
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.test-card p {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* --------------------------------------------
+   КОМБО-СХЕМА
+   -------------------------------------------- */
+.combo-scheme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.combo-item {
+  background: var(--bg-2);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  padding: 25px;
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+  transition: all 0.3s;
+}
+
+.combo-item:hover {
+  border-color: var(--gold);
+  box-shadow: 0 0 25px rgba(251, 191, 36, 0.3);
+}
+
+.combo-item h3 {
+  color: var(--gold);
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.combo-item p {
+  color: var(--text-dim);
+  margin: 0;
+}
+
+.combo-plus {
+  font-size: 2rem;
+  color: var(--accent);
+  font-weight: 900;
+}
+
+/* --------------------------------------------
+   ЦИКЛ БОГИНИ
+   -------------------------------------------- */
+.goddess-cycle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: 30px 0;
+}
+
+.cycle-step {
+  background: var(--bg-2);
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 15px 40px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  min-width: 280px;
+  transition: all 0.3s;
+}
+
+.cycle-step:hover {
+  border-color: var(--accent);
+  box-shadow: var(--glow);
+  transform: scale(1.05);
+}
+
+.cycle-final {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #fff;
+  border: none;
+}
+
+.cycle-arrow {
+  color: var(--accent);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* --------------------------------------------
+   СХЕМА ЭКОСИСТЕМЫ
+   -------------------------------------------- */
+.ecosystem-scheme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: 30px 0;
+}
+
+.eco-item {
+  background: var(--bg-2);
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 15px 30px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+  min-width: 280px;
+  transition: all 0.3s;
+}
+
+.eco-item:hover {
+  border-color: var(--accent);
+  box-shadow: var(--glow);
+  transform: scale(1.03);
+}
+
+.eco-final {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #fff;
+  border: none;
+}
+
+.eco-arrow {
+  color: var(--accent);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* --------------------------------------------
+   СЕТКА ПРОБЛЕМ
+   -------------------------------------------- */
+.problems-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.problem-card {
+  background: var(--bg-2);
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.3s;
+}
+
+.problem-card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--glow);
+  transform: translateX(5px);
+}
+
+.problem-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #fff;
+  border-radius: 50%;
+  font-weight: 900;
+  flex-shrink: 0;
+}
+
+.problem-card p {
+  margin: 0;
+  font-weight: 600;
+}
+
+/* --------------------------------------------
+   СТАДИИ АУДИТОРИИ
+   -------------------------------------------- */
+.stages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.stage-card {
+  background: var(--bg-2);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  padding: 25px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.stage-card:hover {
+  transform: translateY(-5px);
+}
+
+.stage-card:nth-child(1):hover {
+  border-color: #60a5fa;
+  box-shadow: 0 0 25px rgba(96, 165, 250, 0.4);
+}
+
+.stage-card:nth-child(2):hover {
+  border-color: var(--gold);
+  box-shadow: 0 0 25px rgba(251, 191, 36, 0.4);
+}
+
+.stage-card:nth-child(3):hover {
+  border-color: var(--danger);
+  box-shadow: 0 0 25px rgba(239, 68, 68, 0.4);
+}
+
+.stage-card h3 {
+  margin-bottom: 12px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.stage-card p {
+  color: var(--text-dim);
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* --------------------------------------------
+   ТАБЛИЦЫ (content-table)
+   -------------------------------------------- */
+.content-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px 0;
+  background: var(--bg-2);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.content-table th {
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: #fff;
+  padding: 15px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.content-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.content-table tr:last-child td {
+  border-bottom: none;
+}
+
+.content-table tr:hover td {
+  background: rgba(0, 212, 255, 0.05);
+}
+
+/* --------------------------------------------
+   ПРАКТИКА
+   -------------------------------------------- */
+.practice {
+  background: linear-gradient(135deg, var(--bg-2), rgba(0, 212, 255, 0.05));
+  border: 2px solid var(--accent);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.task-box {
+  background: var(--bg);
+  border-radius: 12px;
+  padding: 25px;
+  margin-top: 20px;
+  border: 1px solid var(--border);
+}
+
+.task-box p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+/* --------------------------------------------
+   ЗАДАНИЕ БОГИНИ
+   -------------------------------------------- */
+.task-goddess {
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.08), rgba(0, 212, 255, 0.05));
+  border: 2px solid var(--gold);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.task-goddess h2 {
+  color: var(--gold);
+  border-left-color: var(--gold);
+}
+
+/* --------------------------------------------
+   НАВИГАЦИЯ ГЛАВ
+   -------------------------------------------- */
+.chapter-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: 80px;
+  padding-top: 40px;
+  border-top: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.nav-btn {
+  padding: 15px 30px;
+  background: var(--bg-2);
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+
+.nav-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  box-shadow: var(--glow);
+}
+
+.nav-home {
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: #fff;
+  border-color: transparent;
+}
+
+/* ============================================
+   МОБИЛЬНАЯ АДАПТАЦИЯ
+   ============================================ */
+@media (max-width: 768px) {
+  .chapter-content { padding: 40px 20px; }
+
+  .key-row {
+    grid-template-columns: 40px 1fr;
+    gap: 10px;
+  }
+  .key-count,
+  .key-example { grid-column: 2; }
+
+  .scheme-grid,
+  .brand-key-grid { grid-template-columns: 1fr; }
+
+  .funnel-level:nth-child(n) { margin-right: 0; }
+  .funnel-level {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .chapter-nav { flex-direction: column; }
+  .nav-btn { width: 100%; text-align: center; }
+
+  .profile-elements,
+  .bio-formula,
+  .three-layers,
+  .functions-grid,
+  .pillars-grid,
+  .case-structure,
+  .goals-grid,
+  .problems-grid,
+  .stages-grid { grid-template-columns: 1fr; }
+
+  .calendar-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .funnel-step,
+  .formula-step,
+  .triangle-item,
+  .cycle-step,
+  .combo-item,
+  .eco-item {
+    min-width: auto;
+    width: 100%;
+  }
+
+  .signals-grid,
+  .test-grid { grid-template-columns: 1fr 1fr; }
+
+  .combo-scheme { flex-direction: column; }
+  .combo-plus { transform: rotate(90deg); }
+
+  .content-table {
+    font-size: 0.85rem;
+  }
+  .content-table th,
+  .content-table td {
+    padding: 8px 10px;
+  }
+}
+
+/* ============================================
+   СКРОЛЛБАР
+   ============================================ */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--accent), var(--accent-2));
+  border-radius: 10px;
+}
