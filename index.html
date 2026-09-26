@@ -36,56 +36,6 @@
 
   <link rel="stylesheet" href="style.css">
 
-  <style>
-  /* Подсветка карточек глав при скролле */
-  .chapter-card {
-    position: relative;
-    transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
-  }
-
-  .chapter-card.in-view {
-    border-color: var(--accent);
-    box-shadow: 0 0 30px rgba(0, 212, 255, 0.4), 0 0 60px rgba(168, 85, 247, 0.2);
-    transform: translateY(-5px) scale(1.02);
-    background: linear-gradient(135deg, var(--bg-2), rgba(0, 212, 255, 0.06));
-  }
-
-  .chapter-card h3::after {
-    content: ' →';
-    display: inline-block;
-    opacity: 0;
-    transform: translateX(-5px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    color: var(--accent);
-    font-weight: 700;
-  }
-
-  .chapter-card:hover h3::after,
-  .chapter-card.in-view h3::after {
-    opacity: 1;
-    transform: translateX(0);
-  }
-
-  .chapter-card h3 {
-    background-image: linear-gradient(90deg, var(--accent), var(--accent-2));
-    background-size: 0% 2px;
-    background-repeat: no-repeat;
-    background-position: 0 100%;
-    transition: background-size 0.4s ease;
-  }
-
-  .chapter-card:hover h3,
-  .chapter-card.in-view h3 {
-    background-size: 100% 2px;
-  }
-
-  .chapter-card.in-view .chapter-num {
-    color: rgba(0, 212, 255, 0.5);
-    text-shadow: 0 0 10px rgba(0, 212, 255, 0.6);
-    transition: color 0.4s ease, text-shadow 0.4s ease;
-  }
-  </style>
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -93,7 +43,8 @@
       {
         "@type": "Book",
         "name": "БОГИНЯ СОЦСЕТЕЙ",
-        "description": "Практическое руководство. 30 глав, 100+ практик, 1 система.",
+        "alternateName": "От нуля до работающей цифровой системы",
+        "description": "Практическое руководство: 30 глав, 100+ практик, 1 система.",
         "inLanguage": "ru",
         "author": {"@type": "Organization", "name": "METAIMPERIYA"},
         "publisher": {"@type": "Organization", "name": "METAIMPERIYA"},
@@ -112,7 +63,7 @@
 <body>
 
 <div class="ticker">
-  <div class="ticker-content">
+  <div class="ticker-content" id="tickerContent">
     💎 БОГИНЯ СОЦСЕТЕЙ 💎 METAIMPERIYA 💎 ОТ НУЛЯ ДО РАБОТАЮЩЕЙ СИСТЕМЫ 💎 30 ГЛАВ 💎 ПРАКТИЧЕСКОЕ РУКОВОДСТВО 💎 ТВОЯ ЦИФРОВАЯ ИМПЕРИЯ 💎
   </div>
 </div>
@@ -388,27 +339,62 @@
 
 <script src="script.js"></script>
 
+<!-- 🎬 РОТАЦИЯ БЕГУЩЕЙ СТРОКИ -->
 <script>
-// Подсветка карточек, которые в центре экрана
 (function() {
-  const cards = document.querySelectorAll('.chapter-card');
-  if (!cards.length) return;
+  // Фразы для бегущей строки
+  var phrases = [
+    "💎 БОГИНЯ СОЦСЕТЕЙ 💎 METAIMPERIYA 💎 ОТ НУЛЯ ДО РАБОТАЮЩЕЙ СИСТЕМЫ 💎 30 ГЛАВ 💎 ПРАКТИЧЕСКОЕ РУКОВОДСТВО 💎 ТВОЯ ЦИФРОВАЯ ИМПЕРИЯ 💎",
+    "🎯 КОНТЕНТ ДОЛЖЕН ПРИНОСИТЬ ПОЛЬЗУ 🎯 КАЧЕСТВО ВАЖНЕЕ КОЛИЧЕСТВА 🎯 СНАЧАЛА ЧЕЛОВЕК, ПОТОМ АЛГОРИТМ 🎯 ПИШИ ДЛЯ ЛЮДЕЙ 🎯",
+    "🌐 ПРОДВИЖЕНИЕ НАЧИНАЕТСЯ С ДОВЕРИЯ 🌐 ДОВЕРИЕ ПРЕВРАЩАЕТСЯ В КЛИЕНТОВ 🌐 БУДЬ ТАМ, ГДЕ ТВОЯ АУДИТОРИЯ 🌐 КОНТЕНТ РАБОТАЕТ ПОСТОЯННО 🌐",
+    "📈 РЕГУЛЯРНОСТЬ СОЗДАЁТ РЕЗУЛЬТАТ 📈 ВИДИМОСТЬ СОЗДАЁТ ВОЗМОЖНОСТИ 📈 СИЛЬНЫЙ БРЕНД ЗАПОМИНАЮТ 📈 ПРОСТОТА РАБОТАЕТ ЛУЧШЕ 📈",
+    "✍️ ЗАГОЛОВОК ДОЛЖЕН ЦЕПЛЯТЬ ✍️ ПЕРВЫЕ СЕКУНДЫ РЕШАЮТ ✍️ ВИЗУАЛ ПРИВЛЕКАЕТ ВНИМАНИЕ ✍️ ИСТОРИЯ УДЕРЖИВАЕТ ИНТЕРЕС ✍️ ЭМОЦИИ ЗАПОМИНАЮТСЯ ДОЛЬШЕ ✍️",
+    "🏆 ПОКАЗЫВАЙ, А НЕ ОБЕЩАЙ 🏆 РЕЗУЛЬТАТ ГОВОРИТ ГРОМЧЕ СЛОВ 🏆 РЕПУТАЦИЯ СТРОИТСЯ ПОСТЕПЕННО 🏆 ОДИН КЛИЕНТ ПРИВОДИТ ДРУГОГО 🏆",
+    "🤝 НЕ ПРОДАВАЙ — ПОМОГАЙ 🤝 СНАЧАЛА ЦЕННОСТЬ, ПОТОМ ПРЕДЛОЖЕНИЕ 🤝 СНАЧАЛА ВНИМАНИЕ, ПОТОМ ДОВЕРИЕ 🤝 СНАЧАЛА ДОВЕРИЕ, ПОТОМ ПРОДАЖА 🤝",
+    "🚀 КОНТЕНТ — ТВОЙ ЦИФРОВОЙ АКТИВ 🚀 САЙТ РАБОТАЕТ КРУГЛОСУТОЧНО 🚀 СОЦИАЛЬНЫЕ СЕТИ СОЗДАЮТ ОХВАТ 🚀 SEO СОЗДАЁТ ДОЛГИЙ ЭФФЕКТ 🚀",
+    "🔍 ПОИСК ПРИВОДИТ НОВЫХ ЛЮДЕЙ 🔍 ХОРОШАЯ СТРАНИЦА ОТВЕЧАЕТ СРАЗУ 🔍 У КАЖДОЙ СТРАНИЦЫ ЕСТЬ ЗАДАЧА 🔍 У КАЖДОГО ТЕКСТА ЕСТЬ ЦЕЛЬ 🔍",
+    "📊 АНАЛИЗИРУЙ ЦИФРЫ 📊 ИЗМЕРЯЙ РЕЗУЛЬТАТ 📊 ТЕСТИРУЙ ГИПОТЕЗЫ 📊 МЕНЯЙ ТО, ЧТО НЕ РАБОТАЕТ 📊 УСИЛИВАЙ ТО, ЧТО РАБОТАЕТ 📊",
+    "⚙️ АЛГОРИТМЫ ЛЮБЯТ ПОЛЕЗНОСТЬ ⚙️ ЛЮДИ ЛЮБЯТ ПОНЯТНОСТЬ ⚙️ ПОИСКОВИКИ ПОНИМАЮТ КОНТЕКСТ ⚙️ ЕСТЕСТВЕННЫЙ ТЕКСТ РАБОТАЕТ ЛУЧШЕ ⚙️",
+    "🎨 КРАСИВЫЙ САЙТ ДОЛЖЕН БЫТЬ УДОБНЫМ 🎨 ДИЗАЙН РАБОТАЕТ НА СМЫСЛ 🎨 АНИМАЦИЯ НЕ ЗАМЕНЯЕТ СОДЕРЖАНИЕ 🎨 ЭФФЕКТНОСТЬ ДОЛЖНА ИМЕТЬ ЦЕЛЬ 🎨",
+    "📱 МОБИЛЬНАЯ ВЕРСИЯ ОБЯЗАТЕЛЬНА 📱 УДОБСТВО ВЛИЯЕТ НА ПОВЕДЕНИЕ 📱 ПОЛЬЗОВАТЕЛЬ ДОЛЖЕН ПОНИМАТЬ СРАЗУ 📱 ОДИН ЭКРАН — ОДНА МЫСЛЬ 📱",
+    "👑 METAIMPERIYA СОЗДАЁТ ВОЗМОЖНОСТИ 👑 ЦИФРОВАЯ ИМПЕРИЯ НАЧИНАЕТСЯ ЗДЕСЬ 👑 СОЗДАВАЙ СВОЮ ЦИФРОВУЮ ТЕРРИТОРИЮ 👑 ТВОЯ ИДЕЯ ЗАСЛУЖИВАЕТ ВНИМАНИЯ 👑",
+    "💡 СОЗДАВАЙ. РАЗВИВАЙ. МАСШТАБИРУЙ. 💡 КОНТЕНТ. ТРАФИК. ВЛИЯНИЕ. РЕЗУЛЬТАТ. 💡 ИДЕЯ ПРЕВРАЩАЕТСЯ В СИСТЕМУ 💡 СИСТЕМА ПРЕВРАЩАЕТСЯ В ЭКОСИСТЕМУ 💡",
+    "🌍 БУДУЩЕЕ НАЧИНАЕТСЯ С ЦИФРОВОГО ПРИСУТСТВИЯ 🌍 НЕ ПРОСТО САЙТ — ЦИФРОВАЯ СРЕДА 🌍 НЕ ПРОСТО КОНТЕНТ — ЦИФРОВОЙ КАПИТАЛ 🌍 НЕ ПРОСТО ОХВАТ — РЕАЛЬНЫЕ ВОЗМОЖНОСТИ 🌍",
+    "💎 НЕ ПРОСТО ПОДПИСЧИКИ — СООБЩЕСТВО 💎 НЕ ПРОСТО ПРОДВИЖЕНИЕ — РАЗВИТИЕ 💎 НЕ ПРОСТО ДИЗАЙН — ВПЕЧАТЛЕНИЕ 💎 НЕ ПРОСТО ТРАФИК — ВНИМАНИЕ 💎 НЕ ПРОСТО БРЕНД — ИДЕНТИЧНОСТЬ 💎",
+    "🔥 ПРОДВИЖЕНИЕ НАЧИНАЕТСЯ С ДОВЕРИЯ 🔥 ДОВЕРИЕ ПРЕВРАЩАЕТСЯ В КЛИЕНТОВ 🔥 РЕПУТАЦИЯ ПРЕВРАЩАЕТСЯ В БРЕНД 🔥 БРЕНД ПРЕВРАЩАЕТСЯ В СИСТЕМУ 🔥",
+    "📚 НЕ БОЙСЯ НАЧИНАТЬ 📚 СОЗДАВАЙ, А НЕ КОПИРУЙ 📚 УНИКАЛЬНОСТЬ ПРИВЛЕКАЕТ ВНИМАНИЕ 📚 ХОРОШАЯ ИДЕЯ ТРЕБУЕТ ДЕЙСТВИЯ 📚 КАЖДЫЙ ДЕНЬ — НОВЫЙ ШАГ 📚",
+    "🎯 ВНИМАНИЕ — ГЛАВНЫЙ РЕСУРС 🎯 ИНТЕРЕС ПРЕВРАЩАЕТСЯ В ДЕЙСТВИЕ 🎯 ДЕЙСТВИЕ ПРЕВРАЩАЕТСЯ В РЕЗУЛЬТАТ 🎯 РЕЗУЛЬТАТ ПРЕВРАЩАЕТСЯ В РЕПУТАЦИЮ 🎯"
+  ];
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('in-view');
-      } else {
-        entry.target.classList.remove('in-view');
-      }
-    });
-  }, {
-    rootMargin: '-30% 0px -30% 0px',
-    threshold: 0
-  });
+  var tickerEl = document.getElementById('tickerContent');
+  if (!tickerEl) return;
 
-  cards.forEach(card => observer.observe(card));
+  var currentIndex = 0;
+  var intervalMs = 7000; // 7 секунд
+
+  // Стартуем с случайной фразы
+  currentIndex = Math.floor(Math.random() * phrases.length);
+
+  function setPhrase(index) {
+    tickerEl.style.animation = 'none';
+    tickerEl.textContent = phrases[index];
+    // перезапускаем анимацию
+    void tickerEl.offsetWidth;
+    tickerEl.style.animation = '';
+  }
+
+  function nextPhrase() {
+    currentIndex = (currentIndex + 1) % phrases.length;
+    setPhrase(currentIndex);
+  }
+
+  // Инициализация
+  setPhrase(currentIndex);
+
+  // Ротация
+  setInterval(nextPhrase, intervalMs);
 })();
 </script>
+
 </body>
 </html>
