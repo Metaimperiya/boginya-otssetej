@@ -3,9 +3,148 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
   <title>Глава 30. Чек-лист запуска — БОГИНЯ СОЦСЕТЕЙ</title>
+  <meta name="description" content="Глава 30 книги «Богиня соцсетей». Финальный чек-лист запуска: полная проверка цифрового проекта от нуля до работающей системы. Чек-листы, тесты, задания.">
+  <meta name="keywords" content="чек-лист запуска, финальный чек-лист, проверка проекта, запуск проекта, цифровая система, тест воронки, аналитика, богиня соцсетей, METAIMPERIYA">
+  <meta name="author" content="METAIMPERIYA">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0a0e27">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="БОГИНЯ СОЦСЕТЕЙ">
+  <meta property="og:title" content="Глава 30. Чек-лист запуска">
+  <meta property="og:description" content="Финальная проверка цифрового проекта от нуля до работающей системы.">
+  <meta property="og:url" content="https://boginya-otssetej.vercel.app/glavy/glava-30.html">
+  <meta property="og:image" content="https://raw.githubusercontent.com/Metaimperiya/boginya-otssetej/main/assets/boginya-otssetej.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Богиня соцсетей — глава 30">
+  <meta property="og:locale" content="ru_RU">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Глава 30. Чек-лист запуска">
+  <meta name="twitter:description" content="Финальная проверка проекта. Конец книги.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/Metaimperiya/boginya-otssetej/main/assets/boginya-otssetej.png">
+
+  <link rel="canonical" href="https://boginya-otssetej.vercel.app/glavy/glava-30.html">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👑</text></svg>">
+
+  <!-- Стили -->
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="glava.css">
+
+  <!-- JSON-LD: @graph с 4 сущностями -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Chapter",
+        "@id": "https://boginya-otssetej.vercel.app/glavy/glava-30.html#chapter",
+        "name": "Глава 30. Чек-лист запуска",
+        "description": "Финальная проверка цифрового проекта от нуля до работающей системы.",
+        "inLanguage": "ru",
+        "position": 30,
+        "url": "https://boginya-otssetej.vercel.app/glavy/glava-30.html",
+        "image": "https://raw.githubusercontent.com/Metaimperiya/boginya-otssetej/main/assets/boginya-otssetej.png",
+        "isPartOf": {
+          "@type": "Book",
+          "@id": "https://boginya-otssetej.vercel.app/#book",
+          "name": "БОГИНЯ СОЦСЕТЕЙ",
+          "url": "https://boginya-otssetej.vercel.app/"
+        }
+      },
+      {
+        "@type": "Book",
+        "@id": "https://boginya-otssetej.vercel.app/#book",
+        "name": "БОГИНЯ СОЦСЕТЕЙ",
+        "alternateName": "От нуля до работающей цифровой системы",
+        "description": "Практическое руководство: 30 глав, 100+ практик, 1 система.",
+        "inLanguage": "ru",
+        "author": {
+          "@type": "Organization",
+          "name": "METAIMPERIYA",
+          "url": "https://metaimperiya.com/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "METAIMPERIYA",
+          "url": "https://metaimperiya.com/"
+        },
+        "image": "https://raw.githubusercontent.com/Metaimperiya/boginya-otssetej/main/assets/boginya-otssetej.png",
+        "url": "https://boginya-otssetej.vercel.app/"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://boginya-otssetej.vercel.app/#website",
+        "name": "БОГИНЯ СОЦСЕТЕЙ",
+        "url": "https://boginya-otssetej.vercel.app/",
+        "inLanguage": "ru",
+        "publisher": {
+          "@type": "Organization",
+          "name": "METAIMPERIYA"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://metaimperiya.com/#organization",
+        "name": "METAIMPERIYA",
+        "url": "https://metaimperiya.com/",
+        "sameAs": [
+          "https://t.me/METAIMPERIYA",
+          "https://t.me/Biznes_trener"
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Дополнительные стили для интерактива -->
+  <style>
+    .chapter-section p.check-item {
+      cursor: pointer;
+      padding: 10px 14px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--bg-2);
+      transition: all 0.3s ease;
+      margin-bottom: 10px;
+      user-select: none;
+      position: relative;
+      padding-left: 44px;
+    }
+    .chapter-section p.check-item::before {
+      content: '□';
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.2rem;
+      color: var(--text-dim);
+      transition: all 0.3s ease;
+    }
+    .chapter-section p.check-item:hover {
+      border-color: var(--accent);
+      transform: translateX(5px);
+      box-shadow: 0 0 15px rgba(0, 212, 255, 0.2);
+    }
+    .chapter-section p.check-item.done {
+      border-color: var(--success);
+      background: rgba(34, 197, 94, 0.08);
+      color: var(--text-dim);
+      text-decoration: line-through;
+    }
+    .chapter-section p.check-item.done::before {
+      content: '✅';
+      color: var(--success);
+    }
+  </style>
 </head>
 <body>
 
@@ -78,13 +217,13 @@
 
   <section class="chapter-section">
     <h2>30.1. ПЕРВЫЙ УРОВЕНЬ — ИДЕЯ</h2>
-    <p>□ Я понимаю, какой проект создаю.</p>
-    <p>□ Я могу объяснить проект одним предложением.</p>
-    <p>□ Я понимаю, какую проблему решает мой проект.</p>
-    <p>□ Я понимаю, для кого он предназначен.</p>
-    <p>□ Я понимаю, какой результат получает человек.</p>
-    <p>□ Я понимаю, каким способом проект зарабатывает или будет зарабатывать.</p>
-    <p>□ Я понимаю, чем мой проект отличается от других предложений.</p>
+    <p class="check-item">Я понимаю, какой проект создаю.</p>
+    <p class="check-item">Я могу объяснить проект одним предложением.</p>
+    <p class="check-item">Я понимаю, какую проблему решает мой проект.</p>
+    <p class="check-item">Я понимаю, для кого он предназначен.</p>
+    <p class="check-item">Я понимаю, какой результат получает человек.</p>
+    <p class="check-item">Я понимаю, каким способом проект зарабатывает или будет зарабатывать.</p>
+    <p class="check-item">Я понимаю, чем мой проект отличается от других предложений.</p>
 
     <h3>Тест</h3>
     <p>Попроси незнакомого человека выслушать твоё описание и пересказать его своими словами.</p>
@@ -96,14 +235,14 @@
     <h2>30.2. АУДИТОРИЯ</h2>
     <p>Ответь:</p>
     <p>Кто мой человек?</p>
-    <p>□ Я понимаю возрастную и социальную группу, если это важно для проекта.</p>
-    <p>□ Я понимаю интересы аудитории.</p>
-    <p>□ Я понимаю её проблемы.</p>
-    <p>□ Я понимаю её желания.</p>
-    <p>□ Я понимаю её возражения.</p>
-    <p>□ Я понимаю, где она ищет информацию.</p>
-    <p>□ Я понимаю, какие слова она использует.</p>
-    <p>□ Я понимаю, почему она может выбрать моё предложение.</p>
+    <p class="check-item">Я понимаю возрастную и социальную группу, если это важно для проекта.</p>
+    <p class="check-item">Я понимаю интересы аудитории.</p>
+    <p class="check-item">Я понимаю её проблемы.</p>
+    <p class="check-item">Я понимаю её желания.</p>
+    <p class="check-item">Я понимаю её возражения.</p>
+    <p class="check-item">Я понимаю, где она ищет информацию.</p>
+    <p class="check-item">Я понимаю, какие слова она использует.</p>
+    <p class="check-item">Я понимаю, почему она может выбрать моё предложение.</p>
 
     <div class="callout callout-warning">
       <strong>Ошибка новичка</strong><br>
@@ -128,16 +267,16 @@
 
   <section class="chapter-section">
     <h2>30.4. ПРЕДЛОЖЕНИЕ</h2>
-    <p>□ Я чётко описал услугу или продукт.</p>
-    <p>□ Понятно, для кого он.</p>
-    <p>□ Понятно, что входит.</p>
-    <p>□ Понятно, что не входит, если это важно.</p>
-    <p>□ Понятен результат.</p>
-    <p>□ Понятны сроки.</p>
-    <p>□ Понятна стоимость или способ её узнать.</p>
-    <p>□ Понятен способ заказа.</p>
-    <p>□ Указаны ограничения, если они существуют.</p>
-    <p>□ Я не обещаю невозможного.</p>
+    <p class="check-item">Я чётко описал услугу или продукт.</p>
+    <p class="check-item">Понятно, для кого он.</p>
+    <p class="check-item">Понятно, что входит.</p>
+    <p class="check-item">Понятно, что не входит, если это важно.</p>
+    <p class="check-item">Понятен результат.</p>
+    <p class="check-item">Понятны сроки.</p>
+    <p class="check-item">Понятна стоимость или способ её узнать.</p>
+    <p class="check-item">Понятен способ заказа.</p>
+    <p class="check-item">Указаны ограничения, если они существуют.</p>
+    <p class="check-item">Я не обещаю невозможного.</p>
 
     <h3>Тест</h3>
     <p>Покажи своё предложение человеку, который ничего не знает о твоей работе.</p>
@@ -154,36 +293,36 @@
 
   <section class="chapter-section">
     <h2>30.5. БРЕНД</h2>
-    <p>□ Есть название.</p>
-    <p>□ Название написано одинаково на основных площадках, насколько это возможно.</p>
-    <p>□ Есть username.</p>
-    <p>□ Есть аватар.</p>
-    <p>□ Есть визуальный стиль.</p>
-    <p>□ Есть понятное позиционирование.</p>
-    <p>□ Есть описание.</p>
-    <p>□ Есть основные ключевые слова.</p>
-    <p>□ Есть единый стиль коммуникации.</p>
+    <p class="check-item">Есть название.</p>
+    <p class="check-item">Название написано одинаково на основных площадках, насколько это возможно.</p>
+    <p class="check-item">Есть username.</p>
+    <p class="check-item">Есть аватар.</p>
+    <p class="check-item">Есть визуальный стиль.</p>
+    <p class="check-item">Есть понятное позиционирование.</p>
+    <p class="check-item">Есть описание.</p>
+    <p class="check-item">Есть основные ключевые слова.</p>
+    <p class="check-item">Есть единый стиль коммуникации.</p>
   </section>
 
   <section class="chapter-section">
     <h2>30.6. GOOGLE-АККАУНТ И EMAIL</h2>
-    <p>□ Рабочая почта создана.</p>
-    <p>□ Почта защищена.</p>
-    <p>□ Настроено восстановление.</p>
-    <p>□ Включена двухфакторная аутентификация, если доступна.</p>
-    <p>□ Пароль не используется на других важных сервисах.</p>
-    <p>□ Рабочие документы не смешиваются хаотично с личными.</p>
-    <p>□ Важные данные имеют резервную копию.</p>
+    <p class="check-item">Рабочая почта создана.</p>
+    <p class="check-item">Почта защищена.</p>
+    <p class="check-item">Настроено восстановление.</p>
+    <p class="check-item">Включена двухфакторная аутентификация, если доступна.</p>
+    <p class="check-item">Пароль не используется на других важных сервисах.</p>
+    <p class="check-item">Рабочие документы не смешиваются хаотично с личными.</p>
+    <p class="check-item">Важные данные имеют резервную копию.</p>
   </section>
 
   <section class="chapter-section">
     <h2>30.7. НОМЕРА И СВЯЗЬ</h2>
     <p>Если проекту это необходимо:</p>
-    <p>□ Есть рабочий номер.</p>
-    <p>□ Есть отдельный канал для важных финансовых или документальных операций.</p>
-    <p>□ Понятно, какой номер используется для каких задач.</p>
-    <p>□ Клиентам не передаётся лишняя личная информация.</p>
-    <p>□ Контакты организованы.</p>
+    <p class="check-item">Есть рабочий номер.</p>
+    <p class="check-item">Есть отдельный канал для важных финансовых или документальных операций.</p>
+    <p class="check-item">Понятно, какой номер используется для каких задач.</p>
+    <p class="check-item">Клиентам не передаётся лишняя личная информация.</p>
+    <p class="check-item">Контакты организованы.</p>
     <p>Главная цель — не количество SIM-карт.</p>
     <p>Главная цель:</p>
     <p>порядок и безопасность.</p>
@@ -192,50 +331,50 @@
   <section class="chapter-section">
     <h2>30.8. БЕЗОПАСНОСТЬ</h2>
     <p>Это один из самых важных разделов.</p>
-    <p>□ Уникальные пароли.</p>
-    <p>□ Менеджер паролей.</p>
-    <p>□ Двухфакторная аутентификация.</p>
-    <p>□ Резервная почта.</p>
-    <p>□ Резервный способ восстановления.</p>
-    <p>□ Резервные копии.</p>
-    <p>□ Проверенные администраторы.</p>
-    <p>□ Нет лишних пользователей с доступом.</p>
-    <p>□ API-ключи не опубликованы открыто.</p>
-    <p>□ Секретные данные не лежат в публичном коде.</p>
-    <p>□ Доступ к домену защищён.</p>
-    <p>□ Доступ к хостингу защищён.</p>
-    <p>□ Доступ к социальным сетям защищён.</p>
+    <p class="check-item">Уникальные пароли.</p>
+    <p class="check-item">Менеджер паролей.</p>
+    <p class="check-item">Двухфакторная аутентификация.</p>
+    <p class="check-item">Резервная почта.</p>
+    <p class="check-item">Резервный способ восстановления.</p>
+    <p class="check-item">Резервные копии.</p>
+    <p class="check-item">Проверенные администраторы.</p>
+    <p class="check-item">Нет лишних пользователей с доступом.</p>
+    <p class="check-item">API-ключи не опубликованы открыто.</p>
+    <p class="check-item">Секретные данные не лежат в публичном коде.</p>
+    <p class="check-item">Доступ к домену защищён.</p>
+    <p class="check-item">Доступ к хостингу защищён.</p>
+    <p class="check-item">Доступ к социальным сетям защищён.</p>
   </section>
 
   <section class="chapter-section">
     <h2>30.9. ДОМЕН</h2>
-    <p>□ Домен выбран.</p>
-    <p>□ Домен зарегистрирован на правильного владельца.</p>
-    <p>□ Доступ к регистратору сохранён.</p>
-    <p>□ Оплата продления контролируется.</p>
-    <p>□ Настроены DNS-записи.</p>
-    <p>□ HTTPS работает.</p>
-    <p>□ Домен открывается.</p>
-    <p>□ Основная версия сайта работает.</p>
+    <p class="check-item">Домен выбран.</p>
+    <p class="check-item">Домен зарегистрирован на правильного владельца.</p>
+    <p class="check-item">Доступ к регистратору сохранён.</p>
+    <p class="check-item">Оплата продления контролируется.</p>
+    <p class="check-item">Настроены DNS-записи.</p>
+    <p class="check-item">HTTPS работает.</p>
+    <p class="check-item">Домен открывается.</p>
+    <p class="check-item">Основная версия сайта работает.</p>
   </section>
 
   <section class="chapter-section">
     <h2>30.10. САЙТ</h2>
-    <p>□ Сайт открывается.</p>
-    <p>□ Работает мобильная версия.</p>
-    <p>□ Есть главная страница.</p>
-    <p>□ Есть информация о проекте.</p>
-    <p>□ Есть услуги или продукты.</p>
-    <p>□ Есть портфолио или примеры, если они нужны.</p>
-    <p>□ Есть отзывы, если они реальные и опубликованы корректно.</p>
-    <p>□ Есть контакты.</p>
-    <p>□ Есть CTA.</p>
-    <p>□ Есть понятная навигация.</p>
-    <p>□ Нет битых ссылок.</p>
-    <p>□ Кнопки работают.</p>
-    <p>□ Формы работают.</p>
-    <p>□ Email приходит.</p>
-    <p>□ Мессенджеры открываются.</p>
+    <p class="check-item">Сайт открывается.</p>
+    <p class="check-item">Работает мобильная версия.</p>
+    <p class="check-item">Есть главная страница.</p>
+    <p class="check-item">Есть информация о проекте.</p>
+    <p class="check-item">Есть услуги или продукты.</p>
+    <p class="check-item">Есть портфолио или примеры, если они нужны.</p>
+    <p class="check-item">Есть отзывы, если они реальные и опубликованы корректно.</p>
+    <p class="check-item">Есть контакты.</p>
+    <p class="check-item">Есть CTA.</p>
+    <p class="check-item">Есть понятная навигация.</p>
+    <p class="check-item">Нет битых ссылок.</p>
+    <p class="check-item">Кнопки работают.</p>
+    <p class="check-item">Формы работают.</p>
+    <p class="check-item">Email приходит.</p>
+    <p class="check-item">Мессенджеры открываются.</p>
   </section>
 
   <section class="chapter-section">
@@ -260,33 +399,33 @@
   <section class="chapter-section">
     <h2>30.12. СТРАНИЦА УСЛУГИ</h2>
     <p>Проверь:</p>
-    <p>□ Название услуги.</p>
-    <p>□ Для кого.</p>
-    <p>□ Какая проблема решается.</p>
-    <p>□ Что входит.</p>
-    <p>□ Как проходит работа.</p>
-    <p>□ Сроки.</p>
-    <p>□ Стоимость или способ узнать стоимость.</p>
-    <p>□ Примеры.</p>
-    <p>□ Ответы на вопросы.</p>
-    <p>□ CTA.</p>
+    <p class="check-item">Название услуги.</p>
+    <p class="check-item">Для кого.</p>
+    <p class="check-item">Какая проблема решается.</p>
+    <p class="check-item">Что входит.</p>
+    <p class="check-item">Как проходит работа.</p>
+    <p class="check-item">Сроки.</p>
+    <p class="check-item">Стоимость или способ узнать стоимость.</p>
+    <p class="check-item">Примеры.</p>
+    <p class="check-item">Ответы на вопросы.</p>
+    <p class="check-item">CTA.</p>
   </section>
 
   <section class="chapter-section">
     <h2>30.13. ПРОФИЛИ СОЦИАЛЬНЫХ СЕТЕЙ</h2>
     <p>Для каждого профиля:</p>
-    <p>□ Имя.</p>
-    <p>□ Username.</p>
-    <p>□ Фото.</p>
-    <p>□ Описание.</p>
-    <p>□ Категория.</p>
-    <p>□ География, если нужна.</p>
-    <p>□ Услуги.</p>
-    <p>□ Ссылка.</p>
-    <p>□ Контакты.</p>
-    <p>□ Закреплённый материал.</p>
-    <p>□ Основные публикации.</p>
-    <p>□ Понятный CTA.</p>
+    <p class="check-item">Имя.</p>
+    <p class="check-item">Username.</p>
+    <p class="check-item">Фото.</p>
+    <p class="check-item">Описание.</p>
+    <p class="check-item">Категория.</p>
+    <p class="check-item">География, если нужна.</p>
+    <p class="check-item">Услуги.</p>
+    <p class="check-item">Ссылка.</p>
+    <p class="check-item">Контакты.</p>
+    <p class="check-item">Закреплённый материал.</p>
+    <p class="check-item">Основные публикации.</p>
+    <p class="check-item">Понятный CTA.</p>
   </section>
 
   <section class="chapter-section">
@@ -322,37 +461,37 @@
 
   <section class="chapter-section">
     <h2>30.16. КАРТА КЛЮЧЕЙ</h2>
-    <p>□ Главные запросы.</p>
-    <p>□ Запросы услуг.</p>
-    <p>□ Запросы проблем.</p>
-    <p>□ Географические запросы.</p>
-    <p>□ Вопросы клиентов.</p>
-    <p>□ Информационные запросы.</p>
-    <p>□ Коммерческие запросы.</p>
-    <p>□ Запросы для контента.</p>
-    <p>□ Запросы для FAQ.</p>
+    <p class="check-item">Главные запросы.</p>
+    <p class="check-item">Запросы услуг.</p>
+    <p class="check-item">Запросы проблем.</p>
+    <p class="check-item">Географические запросы.</p>
+    <p class="check-item">Вопросы клиентов.</p>
+    <p class="check-item">Информационные запросы.</p>
+    <p class="check-item">Коммерческие запросы.</p>
+    <p class="check-item">Запросы для контента.</p>
+    <p class="check-item">Запросы для FAQ.</p>
     <p>Не пытайся вставить всё в один текст.</p>
     <p>Группируй запросы по смыслу.</p>
   </section>
 
   <section class="chapter-section">
     <h2>30.17. SEO ПРОВЕРКА</h2>
-    <p>□ Страницы имеют понятные заголовки.</p>
-    <p>□ Заголовки соответствуют содержанию.</p>
-    <p>□ Есть логичная структура H1/H2/H3.</p>
-    <p>□ Title понятный.</p>
-    <p>□ Meta description подготовлен там, где это уместно.</p>
-    <p>□ URL читаемый.</p>
-    <p>□ Изображения имеют понятные имена файлов.</p>
-    <p>□ Alt-тексты добавлены там, где они действительно нужны и поддерживаются.</p>
-    <p>□ Есть внутренние ссылки.</p>
-    <p>□ Нет очевидных дублей страниц.</p>
-    <p>□ Сайт доступен поисковым роботам там, где должен быть доступен.</p>
-    <p>□ Проверена индексация.</p>
-    <p>□ Sitemap настроена, если необходима.</p>
-    <p>□ Robots.txt не блокирует нужные страницы.</p>
-    <p>□ Canonical настроен там, где нужен.</p>
-    <p>□ HTTPS работает.</p>
+    <p class="check-item">Страницы имеют понятные заголовки.</p>
+    <p class="check-item">Заголовки соответствуют содержанию.</p>
+    <p class="check-item">Есть логичная структура H1/H2/H3.</p>
+    <p class="check-item">Title понятный.</p>
+    <p class="check-item">Meta description подготовлен там, где это уместно.</p>
+    <p class="check-item">URL читаемый.</p>
+    <p class="check-item">Изображения имеют понятные имена файлов.</p>
+    <p class="check-item">Alt-тексты добавлены там, где они действительно нужны и поддерживаются.</p>
+    <p class="check-item">Есть внутренние ссылки.</p>
+    <p class="check-item">Нет очевидных дублей страниц.</p>
+    <p class="check-item">Сайт доступен поисковым роботам там, где должен быть доступен.</p>
+    <p class="check-item">Проверена индексация.</p>
+    <p class="check-item">Sitemap настроена, если необходима.</p>
+    <p class="check-item">Robots.txt не блокирует нужные страницы.</p>
+    <p class="check-item">Canonical настроен там, где нужен.</p>
+    <p class="check-item">HTTPS работает.</p>
   </section>
 
   <section class="chapter-section">
@@ -368,17 +507,17 @@
 
   <section class="chapter-section">
     <h2>30.19. КОНТЕНТ</h2>
-    <p>□ Есть контент-план.</p>
-    <p>□ Есть темы.</p>
-    <p>□ Есть форматы.</p>
-    <p>□ Есть экспертный контент.</p>
-    <p>□ Есть полезный контент.</p>
-    <p>□ Есть контент для доверия.</p>
-    <p>□ Есть кейсы.</p>
-    <p>□ Есть FAQ.</p>
-    <p>□ Есть коммерческий контент.</p>
-    <p>□ Есть CTA.</p>
-    <p>□ Есть контент, который отвечает на реальные вопросы аудитории.</p>
+    <p class="check-item">Есть контент-план.</p>
+    <p class="check-item">Есть темы.</p>
+    <p class="check-item">Есть форматы.</p>
+    <p class="check-item">Есть экспертный контент.</p>
+    <p class="check-item">Есть полезный контент.</p>
+    <p class="check-item">Есть контент для доверия.</p>
+    <p class="check-item">Есть кейсы.</p>
+    <p class="check-item">Есть FAQ.</p>
+    <p class="check-item">Есть коммерческий контент.</p>
+    <p class="check-item">Есть CTA.</p>
+    <p class="check-item">Есть контент, который отвечает на реальные вопросы аудитории.</p>
   </section>
 
   <section class="chapter-section">
@@ -407,14 +546,14 @@
     <p>Нельзя управлять всеми алгоритмами платформ.</p>
     <p>Но можно контролировать качество своей работы.</p>
     <p>Проверяй:</p>
-    <p>□ Удерживает ли материал внимание.</p>
-    <p>□ Есть ли смысл досмотреть.</p>
-    <p>□ Есть ли причина сохранить.</p>
-    <p>□ Есть ли причина поделиться.</p>
-    <p>□ Есть ли причина прокомментировать.</p>
-    <p>□ Понятна ли тема.</p>
-    <p>□ Есть ли релевантные слова.</p>
-    <p>□ Соответствует ли контент аудитории.</p>
+    <p class="check-item">Удерживает ли материал внимание.</p>
+    <p class="check-item">Есть ли смысл досмотреть.</p>
+    <p class="check-item">Есть ли причина сохранить.</p>
+    <p class="check-item">Есть ли причина поделиться.</p>
+    <p class="check-item">Есть ли причина прокомментировать.</p>
+    <p class="check-item">Понятна ли тема.</p>
+    <p class="check-item">Есть ли релевантные слова.</p>
+    <p class="check-item">Соответствует ли контент аудитории.</p>
     <p>Точные алгоритмические веса платформ обычно не раскрываются и могут меняться.</p>
   </section>
 
@@ -437,19 +576,19 @@
   <section class="chapter-section">
     <h2>30.23. ВОРОНКА</h2>
     <p>Проверь:</p>
-    <p>□ Есть источник трафика.</p>
-    <p>□ Есть контент.</p>
-    <p>□ Есть профиль или посадочная страница.</p>
-    <p>□ Есть доверие.</p>
-    <p>□ Есть предложение.</p>
-    <p>□ Есть CTA.</p>
-    <p>□ Есть контакт.</p>
-    <p>□ Есть CRM.</p>
-    <p>□ Есть обработка заявки.</p>
-    <p>□ Есть продажа.</p>
-    <p>□ Есть выполнение.</p>
-    <p>□ Есть обратная связь.</p>
-    <p>□ Есть повторное предложение.</p>
+    <p class="check-item">Есть источник трафика.</p>
+    <p class="check-item">Есть контент.</p>
+    <p class="check-item">Есть профиль или посадочная страница.</p>
+    <p class="check-item">Есть доверие.</p>
+    <p class="check-item">Есть предложение.</p>
+    <p class="check-item">Есть CTA.</p>
+    <p class="check-item">Есть контакт.</p>
+    <p class="check-item">Есть CRM.</p>
+    <p class="check-item">Есть обработка заявки.</p>
+    <p class="check-item">Есть продажа.</p>
+    <p class="check-item">Есть выполнение.</p>
+    <p class="check-item">Есть обратная связь.</p>
+    <p class="check-item">Есть повторное предложение.</p>
   </section>
 
   <section class="chapter-section">
@@ -474,15 +613,15 @@
 
   <section class="chapter-section">
     <h2>30.25. CRM</h2>
-    <p>□ Есть список клиентов.</p>
-    <p>□ Есть источник клиента.</p>
-    <p>□ Есть статус.</p>
-    <p>□ Есть следующий шаг.</p>
-    <p>□ Есть дата следующего контакта.</p>
-    <p>□ Есть информация о запросе.</p>
-    <p>□ Есть история общения там, где это необходимо и допустимо.</p>
-    <p>□ Закрытые сделки отмечаются.</p>
-    <p>□ Повторные клиенты отмечаются.</p>
+    <p class="check-item">Есть список клиентов.</p>
+    <p class="check-item">Есть источник клиента.</p>
+    <p class="check-item">Есть статус.</p>
+    <p class="check-item">Есть следующий шаг.</p>
+    <p class="check-item">Есть дата следующего контакта.</p>
+    <p class="check-item">Есть информация о запросе.</p>
+    <p class="check-item">Есть история общения там, где это необходимо и допустимо.</p>
+    <p class="check-item">Закрытые сделки отмечаются.</p>
+    <p class="check-item">Повторные клиенты отмечаются.</p>
   </section>
 
   <section class="chapter-section">
@@ -497,15 +636,15 @@
   <section class="chapter-section">
     <h2>30.27. ПРОДАЖИ</h2>
     <p>Проверь:</p>
-    <p>□ Я умею задавать вопросы.</p>
-    <p>□ Я понимаю потребность клиента.</p>
-    <p>□ Я могу объяснить свою услугу.</p>
-    <p>□ Я могу назвать стоимость.</p>
-    <p>□ Я могу объяснить условия.</p>
-    <p>□ Я умею работать с возражениями.</p>
-    <p>□ Я не обещаю невозможного.</p>
-    <p>□ Я фиксирую договорённости.</p>
-    <p>□ Я понимаю следующий шаг.</p>
+    <p class="check-item">Я умею задавать вопросы.</p>
+    <p class="check-item">Я понимаю потребность клиента.</p>
+    <p class="check-item">Я могу объяснить свою услугу.</p>
+    <p class="check-item">Я могу назвать стоимость.</p>
+    <p class="check-item">Я могу объяснить условия.</p>
+    <p class="check-item">Я умею работать с возражениями.</p>
+    <p class="check-item">Я не обещаю невозможного.</p>
+    <p class="check-item">Я фиксирую договорённости.</p>
+    <p class="check-item">Я понимаю следующий шаг.</p>
   </section>
 
   <section class="chapter-section">
@@ -524,26 +663,26 @@
   <section class="chapter-section">
     <h2>30.29. ОПЛАТА</h2>
     <p>Проверь:</p>
-    <p>□ Есть понятный способ оплаты.</p>
-    <p>□ Клиент понимает сумму.</p>
-    <p>□ Клиент понимает, что получает.</p>
-    <p>□ Зафиксированы условия.</p>
-    <p>□ Понятны сроки.</p>
-    <p>□ Понятно, что происходит после оплаты.</p>
+    <p class="check-item">Есть понятный способ оплаты.</p>
+    <p class="check-item">Клиент понимает сумму.</p>
+    <p class="check-item">Клиент понимает, что получает.</p>
+    <p class="check-item">Зафиксированы условия.</p>
+    <p class="check-item">Понятны сроки.</p>
+    <p class="check-item">Понятно, что происходит после оплаты.</p>
     <p>Для бизнеса также важно учитывать применимые налоговые, договорные и платёжные требования своей юрисдикции.</p>
   </section>
 
   <section class="chapter-section">
     <h2>30.30. ВЫПОЛНЕНИЕ РАБОТЫ</h2>
     <p>После продажи:</p>
-    <p>□ Зафиксируй задачу.</p>
-    <p>□ Получи необходимые материалы.</p>
-    <p>□ Уточни сроки.</p>
-    <p>□ Уточни формат результата.</p>
-    <p>□ Выполни работу.</p>
-    <p>□ Проверь качество.</p>
-    <p>□ Передай результат.</p>
-    <p>□ Получи обратную связь.</p>
+    <p class="check-item">Зафиксируй задачу.</p>
+    <p class="check-item">Получи необходимые материалы.</p>
+    <p class="check-item">Уточни сроки.</p>
+    <p class="check-item">Уточни формат результата.</p>
+    <p class="check-item">Выполни работу.</p>
+    <p class="check-item">Проверь качество.</p>
+    <p class="check-item">Передай результат.</p>
+    <p class="check-item">Получи обратную связь.</p>
   </section>
 
   <section class="chapter-section">
@@ -577,19 +716,19 @@
   <section class="chapter-section">
     <h2>30.33. ПОВТОРНЫЕ ПРОДАЖИ</h2>
     <p>Проверь:</p>
-    <p>□ Я знаю своих прошлых клиентов.</p>
-    <p>□ Я понимаю, какие дополнительные услуги им могут понадобиться.</p>
-    <p>□ Я могу предложить продолжение работы.</p>
-    <p>□ Я не спамлю клиентов бессмысленными предложениями.</p>
-    <p>□ Я поддерживаю нормальную коммуникацию.</p>
+    <p class="check-item">Я знаю своих прошлых клиентов.</p>
+    <p class="check-item">Я понимаю, какие дополнительные услуги им могут понадобиться.</p>
+    <p class="check-item">Я могу предложить продолжение работы.</p>
+    <p class="check-item">Я не спамлю клиентов бессмысленными предложениями.</p>
+    <p class="check-item">Я поддерживаю нормальную коммуникацию.</p>
   </section>
 
   <section class="chapter-section">
     <h2>30.34. РЕКОМЕНДАЦИИ</h2>
-    <p>□ Я могу попросить клиента о рекомендации.</p>
-    <p>□ Я не заставляю его.</p>
-    <p>□ Я даю качественный результат.</p>
-    <p>□ У клиента есть понятная информация, которую можно переслать знакомому.</p>
+    <p class="check-item">Я могу попросить клиента о рекомендации.</p>
+    <p class="check-item">Я не заставляю его.</p>
+    <p class="check-item">Я даю качественный результат.</p>
+    <p class="check-item">У клиента есть понятная информация, которую можно переслать знакомому.</p>
   </section>
 
   <section class="chapter-section">
@@ -621,13 +760,13 @@
   <section class="chapter-section">
     <h2>30.37. АНАЛИТИКА КОНТЕНТА</h2>
     <p>Проверь:</p>
-    <p>□ Какие темы получают внимание.</p>
-    <p>□ Какие форматы работают.</p>
-    <p>□ Какие материалы сохраняют.</p>
-    <p>□ Какие материалы пересылают.</p>
-    <p>□ Какие приводят переходы.</p>
-    <p>□ Какие приводят заявки.</p>
-    <p>□ Какие приводят продажи.</p>
+    <p class="check-item">Какие темы получают внимание.</p>
+    <p class="check-item">Какие форматы работают.</p>
+    <p class="check-item">Какие материалы сохраняют.</p>
+    <p class="check-item">Какие материалы пересылают.</p>
+    <p class="check-item">Какие приводят переходы.</p>
+    <p class="check-item">Какие приводят заявки.</p>
+    <p class="check-item">Какие приводят продажи.</p>
     <p>Материал с большим количеством просмотров не обязательно является самым ценным для бизнеса.</p>
   </section>
 
@@ -661,39 +800,39 @@
   <section class="chapter-section">
     <h2>30.39. AI</h2>
     <p>Проверь:</p>
-    <p>□ AI используется там, где действительно экономит время.</p>
-    <p>□ Ты проверяешь факты.</p>
-    <p>□ Не передаёшь лишние персональные данные.</p>
-    <p>□ Не публикуешь непроверенный AI-текст.</p>
-    <p>□ Не выдаёшь сгенерированные результаты за реальные.</p>
-    <p>□ Сохраняешь человеческий контроль.</p>
+    <p class="check-item">AI используется там, где действительно экономит время.</p>
+    <p class="check-item">Ты проверяешь факты.</p>
+    <p class="check-item">Не передаёшь лишние персональные данные.</p>
+    <p class="check-item">Не публикуешь непроверенный AI-текст.</p>
+    <p class="check-item">Не выдаёшь сгенерированные результаты за реальные.</p>
+    <p class="check-item">Сохраняешь человеческий контроль.</p>
   </section>
 
   <section class="chapter-section">
     <h2>30.40. АВТОМАТИЗАЦИЯ</h2>
     <p>Найди повторяющиеся процессы:</p>
-    <p>□ заявки;</p>
-    <p>□ уведомления;</p>
-    <p>□ создание задач;</p>
-    <p>□ отправка стандартных сообщений;</p>
-    <p>□ напоминания;</p>
-    <p>□ отчёты;</p>
-    <p>□ сортировка данных;</p>
-    <p>□ публикации, если платформа и процесс это позволяют.</p>
+    <p class="check-item">заявки;</p>
+    <p class="check-item">уведомления;</p>
+    <p class="check-item">создание задач;</p>
+    <p class="check-item">отправка стандартных сообщений;</p>
+    <p class="check-item">напоминания;</p>
+    <p class="check-item">отчёты;</p>
+    <p class="check-item">сортировка данных;</p>
+    <p class="check-item">публикации, если платформа и процесс это позволяют.</p>
     <p>Автоматизируй только то, что уже понятно.</p>
   </section>
 
   <section class="chapter-section">
     <h2>30.41. DIGITAL SECURITY</h2>
     <p>Раз в месяц проверяй:</p>
-    <p>□ Кто имеет доступ.</p>
-    <p>□ Какие аккаунты подключены.</p>
-    <p>□ Какие устройства авторизованы.</p>
-    <p>□ Какие приложения имеют разрешения.</p>
-    <p>□ Где хранятся пароли.</p>
-    <p>□ Есть ли резервные копии.</p>
-    <p>□ Работает ли восстановление.</p>
-    <p>□ Не опубликованы ли секретные ключи.</p>
+    <p class="check-item">Кто имеет доступ.</p>
+    <p class="check-item">Какие аккаунты подключены.</p>
+    <p class="check-item">Какие устройства авторизованы.</p>
+    <p class="check-item">Какие приложения имеют разрешения.</p>
+    <p class="check-item">Где хранятся пароли.</p>
+    <p class="check-item">Есть ли резервные копии.</p>
+    <p class="check-item">Работает ли восстановление.</p>
+    <p class="check-item">Не опубликованы ли секретные ключи.</p>
   </section>
 
   <section class="chapter-section">
@@ -717,14 +856,14 @@
   <section class="chapter-section">
     <h2>30.43. ВЛАДЕНИЕ ПРОЕКТОМ</h2>
     <p>Проверь:</p>
-    <p>□ Кто владелец домена.</p>
-    <p>□ Кто владелец сайта.</p>
-    <p>□ Кто контролирует хостинг.</p>
-    <p>□ Кто владелец рабочих email.</p>
-    <p>□ Кто администратор социальных аккаунтов.</p>
-    <p>□ Где находятся исходники.</p>
-    <p>□ Где лежат резервные копии.</p>
-    <p>□ Кто имеет доступ к платежам.</p>
+    <p class="check-item">Кто владелец домена.</p>
+    <p class="check-item">Кто владелец сайта.</p>
+    <p class="check-item">Кто контролирует хостинг.</p>
+    <p class="check-item">Кто владелец рабочих email.</p>
+    <p class="check-item">Кто администратор социальных аккаунтов.</p>
+    <p class="check-item">Где находятся исходники.</p>
+    <p class="check-item">Где лежат резервные копии.</p>
+    <p class="check-item">Кто имеет доступ к платежам.</p>
     <p>Если проект принадлежит тебе, ты должен понимать, где находится контроль над ним.</p>
   </section>
 
@@ -739,103 +878,103 @@
   <section class="chapter-section">
     <h2>30.45. ПЕРВЫЕ 30 ДНЕЙ</h2>
     <p><strong>ДНИ 1–7</strong></p>
-    <p>□ Инфраструктура.</p>
-    <p>□ Безопасность.</p>
-    <p>□ Профиль.</p>
-    <p>□ Сайт.</p>
-    <p>□ Контакты.</p>
-    <p>□ Первые материалы.</p>
-    <p>□ SEO-основа.</p>
-    <p>□ Тест воронки.</p>
+    <p class="check-item">Инфраструктура.</p>
+    <p class="check-item">Безопасность.</p>
+    <p class="check-item">Профиль.</p>
+    <p class="check-item">Сайт.</p>
+    <p class="check-item">Контакты.</p>
+    <p class="check-item">Первые материалы.</p>
+    <p class="check-item">SEO-основа.</p>
+    <p class="check-item">Тест воронки.</p>
 
     <p><strong>ДНИ 8–14</strong></p>
-    <p>□ Регулярный контент.</p>
-    <p>□ Первые обращения.</p>
-    <p>□ Работа с комментариями.</p>
-    <p>□ Поиск клиентов.</p>
-    <p>□ Сбор вопросов.</p>
+    <p class="check-item">Регулярный контент.</p>
+    <p class="check-item">Первые обращения.</p>
+    <p class="check-item">Работа с комментариями.</p>
+    <p class="check-item">Поиск клиентов.</p>
+    <p class="check-item">Сбор вопросов.</p>
 
     <p><strong>ДНИ 15–21</strong></p>
-    <p>□ Анализ.</p>
-    <p>□ Улучшение предложения.</p>
-    <p>□ Улучшение сайта.</p>
-    <p>□ Кейсы.</p>
-    <p>□ Отзывы.</p>
-    <p>□ Follow-up.</p>
+    <p class="check-item">Анализ.</p>
+    <p class="check-item">Улучшение предложения.</p>
+    <p class="check-item">Улучшение сайта.</p>
+    <p class="check-item">Кейсы.</p>
+    <p class="check-item">Отзывы.</p>
+    <p class="check-item">Follow-up.</p>
 
     <p><strong>ДНИ 22–30</strong></p>
-    <p>□ Репаковка контента.</p>
-    <p>□ SEO-контент.</p>
-    <p>□ Повторные продажи.</p>
-    <p>□ Рекомендации.</p>
-    <p>□ Автоматизация.</p>
-    <p>□ Финальный отчёт.</p>
+    <p class="check-item">Репаковка контента.</p>
+    <p class="check-item">SEO-контент.</p>
+    <p class="check-item">Повторные продажи.</p>
+    <p class="check-item">Рекомендации.</p>
+    <p class="check-item">Автоматизация.</p>
+    <p class="check-item">Финальный отчёт.</p>
   </section>
 
   <section class="chapter-section">
     <h2>30.46. ЧЕК-ЛИСТ ПЕРЕД ПЕРВЫМ ЗАПУСКОМ</h2>
-    <p>□ Я понимаю, что продаю.</p>
-    <p>□ Я понимаю, кому продаю.</p>
-    <p>□ У меня есть предложение.</p>
-    <p>□ У меня есть профиль.</p>
-    <p>□ Профиль заполнен.</p>
-    <p>□ У меня есть сайт или посадочная страница.</p>
-    <p>□ Сайт работает.</p>
-    <p>□ Контакты работают.</p>
-    <p>□ CTA работает.</p>
-    <p>□ Есть первые материалы.</p>
-    <p>□ Есть SEO-основа.</p>
-    <p>□ Есть воронка.</p>
-    <p>□ Есть способ принять заявку.</p>
-    <p>□ Есть CRM.</p>
-    <p>□ Есть аналитика.</p>
-    <p>□ Есть безопасность.</p>
-    <p>□ Есть резервные копии.</p>
-    <p>□ Я проверил путь клиента.</p>
+    <p class="check-item">Я понимаю, что продаю.</p>
+    <p class="check-item">Я понимаю, кому продаю.</p>
+    <p class="check-item">У меня есть предложение.</p>
+    <p class="check-item">У меня есть профиль.</p>
+    <p class="check-item">Профиль заполнен.</p>
+    <p class="check-item">У меня есть сайт или посадочная страница.</p>
+    <p class="check-item">Сайт работает.</p>
+    <p class="check-item">Контакты работают.</p>
+    <p class="check-item">CTA работает.</p>
+    <p class="check-item">Есть первые материалы.</p>
+    <p class="check-item">Есть SEO-основа.</p>
+    <p class="check-item">Есть воронка.</p>
+    <p class="check-item">Есть способ принять заявку.</p>
+    <p class="check-item">Есть CRM.</p>
+    <p class="check-item">Есть аналитика.</p>
+    <p class="check-item">Есть безопасность.</p>
+    <p class="check-item">Есть резервные копии.</p>
+    <p class="check-item">Я проверил путь клиента.</p>
   </section>
 
   <section class="chapter-section">
     <h2>30.47. ЧЕК-ЛИСТ ПЕРЕД ПЕРВОЙ ПРОДАЖЕЙ</h2>
-    <p>□ Я понимаю задачу клиента.</p>
-    <p>□ Я могу объяснить предложение.</p>
-    <p>□ Я знаю стоимость.</p>
-    <p>□ Я знаю сроки.</p>
-    <p>□ Я знаю условия.</p>
-    <p>□ Я знаю способ оплаты.</p>
-    <p>□ Я понимаю процесс работы.</p>
-    <p>□ Я могу показать примеры.</p>
-    <p>□ Я понимаю, что происходит после оплаты.</p>
+    <p class="check-item">Я понимаю задачу клиента.</p>
+    <p class="check-item">Я могу объяснить предложение.</p>
+    <p class="check-item">Я знаю стоимость.</p>
+    <p class="check-item">Я знаю сроки.</p>
+    <p class="check-item">Я знаю условия.</p>
+    <p class="check-item">Я знаю способ оплаты.</p>
+    <p class="check-item">Я понимаю процесс работы.</p>
+    <p class="check-item">Я могу показать примеры.</p>
+    <p class="check-item">Я понимаю, что происходит после оплаты.</p>
   </section>
 
   <section class="chapter-section">
     <h2>30.48. ЧЕК-ЛИСТ ПОСЛЕ ПЕРВОЙ ПРОДАЖИ</h2>
-    <p>□ Клиент получил подтверждение.</p>
-    <p>□ Задача зафиксирована.</p>
-    <p>□ Материалы получены.</p>
-    <p>□ Сроки определены.</p>
-    <p>□ Работа выполнена.</p>
-    <p>□ Результат проверен.</p>
-    <p>□ Результат передан.</p>
-    <p>□ Получена обратная связь.</p>
-    <p>□ Отзыв запрошен, если уместно.</p>
-    <p>□ Результат можно превратить в кейс, если есть разрешение.</p>
+    <p class="check-item">Клиент получил подтверждение.</p>
+    <p class="check-item">Задача зафиксирована.</p>
+    <p class="check-item">Материалы получены.</p>
+    <p class="check-item">Сроки определены.</p>
+    <p class="check-item">Работа выполнена.</p>
+    <p class="check-item">Результат проверен.</p>
+    <p class="check-item">Результат передан.</p>
+    <p class="check-item">Получена обратная связь.</p>
+    <p class="check-item">Отзыв запрошен, если уместно.</p>
+    <p class="check-item">Результат можно превратить в кейс, если есть разрешение.</p>
   </section>
 
   <section class="chapter-section">
     <h2>30.49. ЧЕК-ЛИСТ КОНЦА ПЕРВОГО МЕСЯЦА</h2>
-    <p>□ Я знаю источник своих первых клиентов.</p>
-    <p>□ Я знаю лучшие темы контента.</p>
-    <p>□ Я знаю основные вопросы аудитории.</p>
-    <p>□ Я знаю основные возражения.</p>
-    <p>□ Я знаю слабое место воронки.</p>
-    <p>□ Я знаю, что нужно улучшить на сайте.</p>
-    <p>□ Я знаю, что нужно улучшить в профиле.</p>
-    <p>□ Я знаю, какие услуги интересуют аудиторию.</p>
-    <p>□ Я знаю количество лидов.</p>
-    <p>□ Я знаю количество продаж.</p>
-    <p>□ Я знаю выручку.</p>
-    <p>□ Я понимаю основные расходы.</p>
-    <p>□ У меня есть план следующего месяца.</p>
+    <p class="check-item">Я знаю источник своих первых клиентов.</p>
+    <p class="check-item">Я знаю лучшие темы контента.</p>
+    <p class="check-item">Я знаю основные вопросы аудитории.</p>
+    <p class="check-item">Я знаю основные возражения.</p>
+    <p class="check-item">Я знаю слабое место воронки.</p>
+    <p class="check-item">Я знаю, что нужно улучшить на сайте.</p>
+    <p class="check-item">Я знаю, что нужно улучшить в профиле.</p>
+    <p class="check-item">Я знаю, какие услуги интересуют аудиторию.</p>
+    <p class="check-item">Я знаю количество лидов.</p>
+    <p class="check-item">Я знаю количество продаж.</p>
+    <p class="check-item">Я знаю выручку.</p>
+    <p class="check-item">Я понимаю основные расходы.</p>
+    <p class="check-item">У меня есть план следующего месяца.</p>
   </section>
 
   <section class="chapter-section">
@@ -881,19 +1020,19 @@
   <section class="chapter-section">
     <h2>30.53. ТВОЯ ЕЖЕМЕСЯЧНАЯ ПРОВЕРКА</h2>
     <p>Раз в месяц:</p>
-    <p>□ Посмотри трафик.</p>
-    <p>□ Посмотри источники.</p>
-    <p>□ Посмотри контент.</p>
-    <p>□ Посмотри SEO.</p>
-    <p>□ Посмотри лиды.</p>
-    <p>□ Посмотри продажи.</p>
-    <p>□ Посмотри выручку.</p>
-    <p>□ Посмотри расходы.</p>
-    <p>□ Посмотри повторные продажи.</p>
-    <p>□ Посмотри рекомендации.</p>
-    <p>□ Посмотри технические ошибки.</p>
-    <p>□ Проверь безопасность.</p>
-    <p>□ Обнови план.</p>
+    <p class="check-item">Посмотри трафик.</p>
+    <p class="check-item">Посмотри источники.</p>
+    <p class="check-item">Посмотри контент.</p>
+    <p class="check-item">Посмотри SEO.</p>
+    <p class="check-item">Посмотри лиды.</p>
+    <p class="check-item">Посмотри продажи.</p>
+    <p class="check-item">Посмотри выручку.</p>
+    <p class="check-item">Посмотри расходы.</p>
+    <p class="check-item">Посмотри повторные продажи.</p>
+    <p class="check-item">Посмотри рекомендации.</p>
+    <p class="check-item">Посмотри технические ошибки.</p>
+    <p class="check-item">Проверь безопасность.</p>
+    <p class="check-item">Обнови план.</p>
   </section>
 
   <section class="chapter-section">
@@ -1126,36 +1265,36 @@
   <section class="chapter-section">
     <h2>30.66. ФИНАЛЬНЫЙ ЧЕК-ЛИСТ</h2>
     <p>Если хочешь быстро проверить весь проект, пройди эти 30 пунктов:</p>
-    <p>□ 1. Я знаю, что создаю.</p>
-    <p>□ 2. Я знаю свою аудиторию.</p>
-    <p>□ 3. Я знаю проблему клиента.</p>
-    <p>□ 4. У меня есть предложение.</p>
-    <p>□ 5. Есть название и позиционирование.</p>
-    <p>□ 6. Есть защищённые рабочие аккаунты.</p>
-    <p>□ 7. Есть рабочая почта.</p>
-    <p>□ 8. Есть домен или понятная цифровая точка входа.</p>
-    <p>□ 9. Есть сайт или посадочная страница.</p>
-    <p>□ 10. Есть профиль.</p>
-    <p>□ 11. Профиль понятно оформлен.</p>
-    <p>□ 12. Есть ключевые слова.</p>
-    <p>□ 13. Есть контент-план.</p>
-    <p>□ 14. Есть контент.</p>
-    <p>□ 15. Есть SEO-основа.</p>
-    <p>□ 16. Есть воронка.</p>
-    <p>□ 17. Есть CTA.</p>
-    <p>□ 18. Есть способ связи.</p>
-    <p>□ 19. Есть CRM или система учёта.</p>
-    <p>□ 20. Есть продажи.</p>
-    <p>□ 21. Есть процесс выполнения.</p>
-    <p>□ 22. Есть отзывы и кейсы, когда они доступны.</p>
-    <p>□ 23. Есть аналитика.</p>
-    <p>□ 24. Есть резервные копии.</p>
-    <p>□ 25. Есть защита аккаунтов.</p>
-    <p>□ 26. Есть план повторных продаж.</p>
-    <p>□ 27. Есть система рекомендаций.</p>
-    <p>□ 28. Есть автоматизация там, где она действительно нужна.</p>
-    <p>□ 29. Есть план развития.</p>
-    <p>□ 30. Есть регулярный контроль всей системы.</p>
+    <p class="check-item">1. Я знаю, что создаю.</p>
+    <p class="check-item">2. Я знаю свою аудиторию.</p>
+    <p class="check-item">3. Я знаю проблему клиента.</p>
+    <p class="check-item">4. У меня есть предложение.</p>
+    <p class="check-item">5. Есть название и позиционирование.</p>
+    <p class="check-item">6. Есть защищённые рабочие аккаунты.</p>
+    <p class="check-item">7. Есть рабочая почта.</p>
+    <p class="check-item">8. Есть домен или понятная цифровая точка входа.</p>
+    <p class="check-item">9. Есть сайт или посадочная страница.</p>
+    <p class="check-item">10. Есть профиль.</p>
+    <p class="check-item">11. Профиль понятно оформлен.</p>
+    <p class="check-item">12. Есть ключевые слова.</p>
+    <p class="check-item">13. Есть контент-план.</p>
+    <p class="check-item">14. Есть контент.</p>
+    <p class="check-item">15. Есть SEO-основа.</p>
+    <p class="check-item">16. Есть воронка.</p>
+    <p class="check-item">17. Есть CTA.</p>
+    <p class="check-item">18. Есть способ связи.</p>
+    <p class="check-item">19. Есть CRM или система учёта.</p>
+    <p class="check-item">20. Есть продажи.</p>
+    <p class="check-item">21. Есть процесс выполнения.</p>
+    <p class="check-item">22. Есть отзывы и кейсы, когда они доступны.</p>
+    <p class="check-item">23. Есть аналитика.</p>
+    <p class="check-item">24. Есть резервные копии.</p>
+    <p class="check-item">25. Есть защита аккаунтов.</p>
+    <p class="check-item">26. Есть план повторных продаж.</p>
+    <p class="check-item">27. Есть система рекомендаций.</p>
+    <p class="check-item">28. Есть автоматизация там, где она действительно нужна.</p>
+    <p class="check-item">29. Есть план развития.</p>
+    <p class="check-item">30. Есть регулярный контроль всей системы.</p>
   </section>
 
   <section class="chapter-section">
@@ -1344,44 +1483,44 @@
 
   <section class="chapter-section">
     <h2>✅ ЧЕК-ЛИСТ ГЛАВЫ 30</h2>
-    <p>□ Я знаю, что создаю.</p>
-    <p>□ Я знаю свою аудиторию.</p>
-    <p>□ Я знаю проблему клиента.</p>
-    <p>□ У меня есть предложение.</p>
-    <p>□ У меня есть название и позиционирование.</p>
-    <p>□ У меня есть защищённые аккаунты.</p>
-    <p>□ У меня есть рабочая почта.</p>
-    <p>□ У меня есть домен.</p>
-    <p>□ У меня есть сайт.</p>
-    <p>□ У меня есть профиль.</p>
-    <p>□ Профиль понятно оформлен.</p>
-    <p>□ У меня есть ключевые слова.</p>
-    <p>□ У меня есть контент-план.</p>
-    <p>□ У меня есть контент.</p>
-    <p>□ У меня есть SEO-основа.</p>
-    <p>□ У меня есть воронка.</p>
-    <p>□ У меня есть CTA.</p>
-    <p>□ У меня есть способ связи.</p>
-    <p>□ У меня есть CRM.</p>
-    <p>□ У меня есть продажи.</p>
-    <p>□ У меня есть процесс выполнения.</p>
-    <p>□ У меня есть отзывы и кейсы.</p>
-    <p>□ У меня есть аналитика.</p>
-    <p>□ У меня есть резервные копии.</p>
-    <p>□ У меня есть защита аккаунтов.</p>
-    <p>□ У меня есть план повторных продаж.</p>
-    <p>□ У меня есть система рекомендаций.</p>
-    <p>□ У меня есть автоматизация.</p>
-    <p>□ У меня есть план развития.</p>
-    <p>□ У меня есть регулярный контроль системы.</p>
-    <p>□ Я прошёл(ла) тест воронки.</p>
-    <p>□ Я прошёл(ла) тест чужими глазами.</p>
-    <p>□ Я знаю слабое место системы.</p>
-    <p>□ Я знаю, как его исправить.</p>
-    <p>□ Я умею работать с отказами.</p>
-    <p>□ Я умею анализировать результат.</p>
-    <p>□ Я умею улучшать систему.</p>
-    <p>□ Я умею масштабировать то, что работает.</p>
+    <p class="check-item">Я знаю, что создаю.</p>
+    <p class="check-item">Я знаю свою аудиторию.</p>
+    <p class="check-item">Я знаю проблему клиента.</p>
+    <p class="check-item">У меня есть предложение.</p>
+    <p class="check-item">У меня есть название и позиционирование.</p>
+    <p class="check-item">У меня есть защищённые аккаунты.</p>
+    <p class="check-item">У меня есть рабочая почта.</p>
+    <p class="check-item">У меня есть домен.</p>
+    <p class="check-item">У меня есть сайт.</p>
+    <p class="check-item">У меня есть профиль.</p>
+    <p class="check-item">Профиль понятно оформлен.</p>
+    <p class="check-item">У меня есть ключевые слова.</p>
+    <p class="check-item">У меня есть контент-план.</p>
+    <p class="check-item">У меня есть контент.</p>
+    <p class="check-item">У меня есть SEO-основа.</p>
+    <p class="check-item">У меня есть воронка.</p>
+    <p class="check-item">У меня есть CTA.</p>
+    <p class="check-item">У меня есть способ связи.</p>
+    <p class="check-item">У меня есть CRM.</p>
+    <p class="check-item">У меня есть продажи.</p>
+    <p class="check-item">У меня есть процесс выполнения.</p>
+    <p class="check-item">У меня есть отзывы и кейсы.</p>
+    <p class="check-item">У меня есть аналитика.</p>
+    <p class="check-item">У меня есть резервные копии.</p>
+    <p class="check-item">У меня есть защита аккаунтов.</p>
+    <p class="check-item">У меня есть план повторных продаж.</p>
+    <p class="check-item">У меня есть система рекомендаций.</p>
+    <p class="check-item">У меня есть автоматизация.</p>
+    <p class="check-item">У меня есть план развития.</p>
+    <p class="check-item">У меня есть регулярный контроль системы.</p>
+    <p class="check-item">Я прошёл(ла) тест воронки.</p>
+    <p class="check-item">Я прошёл(ла) тест чужими глазами.</p>
+    <p class="check-item">Я знаю слабое место системы.</p>
+    <p class="check-item">Я знаю, как его исправить.</p>
+    <p class="check-item">Я умею работать с отказами.</p>
+    <p class="check-item">Я умею анализировать результат.</p>
+    <p class="check-item">Я умею улучшать систему.</p>
+    <p class="check-item">Я умею масштабировать то, что работает.</p>
   </section>
 
   <section class="chapter-section task-goddess">
@@ -1468,6 +1607,10 @@
 
 <footer class="footer">
   <p>© 2026 METAIMPERIYA · БОГИНЯ СОЦСЕТЕЙ</p>
+  <p class="footer-sub">Строй систему. Создавай доверие. Решай реальные проблемы.</p>
+  <p style="margin-top:15px">
+    <a href="../metaimperiya.html" style="color: var(--accent); text-decoration: none; font-weight: 600;">← Перейти на METAIMPERIYA</a>
+  </p>
 </footer>
 
 <script src="../script.js"></script>
@@ -1476,6 +1619,13 @@ window.addEventListener('scroll', () => {
   const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   document.getElementById('progressFill').style.width = (winScroll / height) * 100 + '%';
+});
+
+// Кликабельный чек-лист
+document.querySelectorAll('.check-item').forEach(item => {
+  item.addEventListener('click', () => {
+    item.classList.toggle('done');
+  });
 });
 </script>
 </body>
