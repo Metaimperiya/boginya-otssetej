@@ -12,34 +12,80 @@
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#0a0e27">
 
-  <!-- Open Graph (превьюшка для Telegram, Facebook, WhatsApp, VK) -->
+  <!-- Open Graph -->
   <meta property="og:type" content="book">
   <meta property="og:site_name" content="БОГИНЯ СОЦСЕТЕЙ">
   <meta property="og:title" content="БОГИНЯ СОЦСЕТЕЙ — от нуля до работающей системы">
-  <meta property="og:description" content="Практическое руководство: 30 глав, 100+ практик, 1 система. Учись пользоваться интернетом, соцсетями и продвигать себя или свой бизнес.">
-  <meta property="og:url" content="https://metaimperiya.com/">
+  <meta property="og:description" content="Практическое руководство: 30 глав, 100+ практик, 1 система.">
+  <meta property="og:url" content="https://boginya-otssetej.vercel.app/">
   <meta property="og:image" content="https://raw.githubusercontent.com/Metaimperiya/boginya-otssetej/main/assets/boginya-otssetej.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="БОГИНЯ СОЦСЕТЕЙ — практическое руководство от METAIMPERIYA">
+  <meta property="og:image:alt" content="БОГИНЯ СОЦСЕТЕЙ — практическое руководство">
   <meta property="og:locale" content="ru_RU">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="БОГИНЯ СОЦСЕТЕЙ — практическое руководство">
-  <meta name="twitter:description" content="30 глав. 100+ практик. 1 система. От нуля до работающей цифровой системы.">
+  <meta name="twitter:description" content="30 глав. 100+ практик. 1 система.">
   <meta name="twitter:image" content="https://raw.githubusercontent.com/Metaimperiya/boginya-otssetej/main/assets/boginya-otssetej.png">
 
-  <!-- Canonical -->
-  <link rel="canonical" href="https://metaimperiya.com/">
+  <link rel="canonical" href="https://boginya-otssetej.vercel.app/">
 
-  <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👑</text></svg>">
 
-  <!-- Стили -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- JSON-LD (структурированные данные для Google) -->
+  <style>
+  /* Подсветка карточек глав при скролле */
+  .chapter-card {
+    position: relative;
+    transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+  }
+
+  .chapter-card.in-view {
+    border-color: var(--accent);
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.4), 0 0 60px rgba(168, 85, 247, 0.2);
+    transform: translateY(-5px) scale(1.02);
+    background: linear-gradient(135deg, var(--bg-2), rgba(0, 212, 255, 0.06));
+  }
+
+  .chapter-card h3::after {
+    content: ' →';
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(-5px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  .chapter-card:hover h3::after,
+  .chapter-card.in-view h3::after {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .chapter-card h3 {
+    background-image: linear-gradient(90deg, var(--accent), var(--accent-2));
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    transition: background-size 0.4s ease;
+  }
+
+  .chapter-card:hover h3,
+  .chapter-card.in-view h3 {
+    background-size: 100% 2px;
+  }
+
+  .chapter-card.in-view .chapter-num {
+    color: rgba(0, 212, 255, 0.5);
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.6);
+    transition: color 0.4s ease, text-shadow 0.4s ease;
+  }
+  </style>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -47,56 +93,17 @@
       {
         "@type": "Book",
         "name": "БОГИНЯ СОЦСЕТЕЙ",
-        "alternateName": "От нуля до работающей цифровой системы",
-        "description": "Практическое руководство для тех, кто хочет научиться пользоваться интернетом, социальными сетями и продвигать себя или свой бизнес. 30 глав, 100+ практик, 1 система.",
+        "description": "Практическое руководство. 30 глав, 100+ практик, 1 система.",
         "inLanguage": "ru",
-        "author": {
-          "@type": "Organization",
-          "name": "METAIMPERIYA",
-          "url": "https://metaimperiya.com/"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "METAIMPERIYA",
-          "url": "https://metaimperiya.com/"
-        },
-        "url": "https://metaimperiya.com/",
-        "image": "https://raw.githubusercontent.com/Metaimperiya/boginya-otssetej/main/assets/boginya-otssetej.png",
-        "numberOfPages": 30,
-        "bookFormat": "https://schema.org/EBook",
-        "genre": "Интернет-маркетинг",
-        "keywords": "соцсети, продвижение, SEO, контент, воронка, аналитика, личный бренд, METAIMPERIYA"
+        "author": {"@type": "Organization", "name": "METAIMPERIYA"},
+        "publisher": {"@type": "Organization", "name": "METAIMPERIYA"},
+        "image": "https://raw.githubusercontent.com/Metaimperiya/boginya-otssetej/main/assets/boginya-otssetej.png"
       },
       {
         "@type": "WebSite",
         "name": "БОГИНЯ СОЦСЕТЕЙ",
-        "url": "https://metaimperiya.com/",
-        "inLanguage": "ru",
-        "publisher": {
-          "@type": "Organization",
-          "name": "METAIMPERIYA"
-        }
-      },
-      {
-        "@type": "Organization",
-        "name": "METAIMPERIYA",
-        "url": "https://metaimperiya.com/",
-        "sameAs": [
-          "https://t.me/METAIMPERIYA",
-          "https://t.me/Biznes_trener"
-        ]
-      },
-      {
-        "@type": "Course",
-        "name": "БОГИНЯ СОЦСЕТЕЙ — практическое руководство",
-        "description": "30 глав: от цифровой основы до работающей системы продвижения.",
-        "provider": {
-          "@type": "Organization",
-          "name": "METAIMPERIYA",
-          "url": "https://metaimperiya.com/"
-        },
-        "inLanguage": "ru",
-        "isAccessibleForFree": true
+        "url": "https://boginya-otssetej.vercel.app/",
+        "inLanguage": "ru"
       }
     ]
   }
@@ -380,5 +387,28 @@
 </footer>
 
 <script src="script.js"></script>
+
+<script>
+// Подсветка карточек, которые в центре экрана
+(function() {
+  const cards = document.querySelectorAll('.chapter-card');
+  if (!cards.length) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+      } else {
+        entry.target.classList.remove('in-view');
+      }
+    });
+  }, {
+    rootMargin: '-30% 0px -30% 0px',
+    threshold: 0
+  });
+
+  cards.forEach(card => observer.observe(card));
+})();
+</script>
 </body>
 </html>
