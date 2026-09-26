@@ -3,9 +3,228 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
   <title>Глава 5. Алгоритмы социальных сетей — БОГИНЯ СОЦСЕТЕЙ</title>
+  <meta name="description" content="Глава 5 книги «Богиня соцсетей». Как работают алгоритмы соцсетей: сигналы, удержание, просмотры, статистика. Почему не все подписчики видят твой пост.">
+  <meta name="keywords" content="алгоритмы соцсетей, сигналы алгоритма, удержание, время просмотра, охват, статистика, тематическая последовательность, богиня соцсетей, METAIMPERIYA">
+  <meta name="author" content="METAIMPERIYA">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0a0e27">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="БОГИНЯ СОЦСЕТЕЙ">
+  <meta property="og:title" content="Глава 5. Алгоритмы социальных сетей">
+  <meta property="og:description" content="Сигналы, удержание, просмотры, статистика. Почему не все подписчики видят твой пост.">
+  <meta property="og:url" content="https://boginya-otssetej.vercel.app/glavy/glava-05.html">
+  <meta property="og:image" content="https://raw.githubusercontent.com/Metaimperiya/boginya-otssetej/main/assets/boginya-otssetej.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Богиня соцсетей — глава 5">
+  <meta property="og:locale" content="ru_RU">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Глава 5. Алгоритмы социальных сетей">
+  <meta name="twitter:description" content="Сигналы, удержание, просмотры, статистика.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/Metaimperiya/boginya-otssetej/main/assets/boginya-otssetej.png">
+
+  <link rel="canonical" href="https://boginya-otssetej.vercel.app/glavy/glava-05.html">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👑</text></svg>">
+
+  <!-- Стили -->
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="glava.css">
+
+  <!-- JSON-LD: @graph с 4 сущностями -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Chapter",
+        "@id": "https://boginya-otssetej.vercel.app/glavy/glava-05.html#chapter",
+        "name": "Глава 5. Алгоритмы социальных сетей",
+        "description": "Как работают алгоритмы соцсетей: сигналы, удержание, просмотры, статистика. Почему не все подписчики видят твой пост.",
+        "inLanguage": "ru",
+        "position": 5,
+        "url": "https://boginya-otssetej.vercel.app/glavy/glava-05.html",
+        "image": "https://raw.githubusercontent.com/Metaimperiya/boginya-otssetej/main/assets/boginya-otssetej.png",
+        "isPartOf": {
+          "@type": "Book",
+          "@id": "https://boginya-otssetej.vercel.app/#book",
+          "name": "БОГИНЯ СОЦСЕТЕЙ",
+          "url": "https://boginya-otssetej.vercel.app/"
+        }
+      },
+      {
+        "@type": "Book",
+        "@id": "https://boginya-otssetej.vercel.app/#book",
+        "name": "БОГИНЯ СОЦСЕТЕЙ",
+        "alternateName": "От нуля до работающей цифровой системы",
+        "description": "Практическое руководство: 30 глав, 100+ практик, 1 система.",
+        "inLanguage": "ru",
+        "author": {
+          "@type": "Organization",
+          "name": "METAIMPERIYA",
+          "url": "https://metaimperiya.com/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "METAIMPERIYA",
+          "url": "https://metaimperiya.com/"
+        },
+        "image": "https://raw.githubusercontent.com/Metaimperiya/boginya-otssetej/main/assets/boginya-otssetej.png",
+        "url": "https://boginya-otssetej.vercel.app/"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://boginya-otssetej.vercel.app/#website",
+        "name": "БОГИНЯ СОЦСЕТЕЙ",
+        "url": "https://boginya-otssetej.vercel.app/",
+        "inLanguage": "ru",
+        "publisher": {
+          "@type": "Organization",
+          "name": "METAIMPERIYA"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://metaimperiya.com/#organization",
+        "name": "METAIMPERIYA",
+        "url": "https://metaimperiya.com/",
+        "sameAs": [
+          "https://t.me/METAIMPERIYA",
+          "https://t.me/Biznes_trener"
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Дополнительные стили для интерактива -->
+  <style>
+    .chapter-section p.check-item {
+      cursor: pointer;
+      padding: 10px 14px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--bg-2);
+      transition: all 0.3s ease;
+      margin-bottom: 10px;
+      user-select: none;
+      position: relative;
+      padding-left: 44px;
+    }
+    .chapter-section p.check-item::before {
+      content: '□';
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.2rem;
+      color: var(--text-dim);
+      transition: all 0.3s ease;
+    }
+    .chapter-section p.check-item:hover {
+      border-color: var(--accent);
+      transform: translateX(5px);
+      box-shadow: 0 0 15px rgba(0, 212, 255, 0.2);
+    }
+    .chapter-section p.check-item.done {
+      border-color: var(--success);
+      background: rgba(34, 197, 94, 0.08);
+      color: var(--text-dim);
+      text-decoration: line-through;
+    }
+    .chapter-section p.check-item.done::before {
+      content: '✅';
+      color: var(--success);
+    }
+
+    /* Кликабельные сигналы */
+    .signal-item {
+      cursor: pointer;
+    }
+    .signal-item.active {
+      border-color: var(--accent);
+      background: linear-gradient(135deg, var(--bg-2), rgba(0, 212, 255, 0.08));
+      box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+      transform: translateY(-3px) scale(1.05);
+      color: var(--accent);
+    }
+
+    /* Тесты — кликабельные */
+    .test-card {
+      cursor: pointer;
+    }
+    .test-card.active {
+      border-color: var(--gold);
+      background: linear-gradient(135deg, var(--bg-2), rgba(251, 191, 36, 0.08));
+      box-shadow: 0 0 25px rgba(251, 191, 36, 0.5);
+      transform: translateY(-5px) scale(1.05);
+    }
+
+    /* Комбо — кликабельные */
+    .combo-item {
+      cursor: pointer;
+    }
+    .combo-item.active {
+      border-color: var(--success);
+      background: linear-gradient(135deg, var(--bg-2), rgba(34, 197, 94, 0.08));
+      box-shadow: 0 0 25px rgba(34, 197, 94, 0.5);
+    }
+
+    /* Формула — кликабельная */
+    .formula-step {
+      cursor: pointer;
+    }
+    .formula-step.active {
+      border-color: var(--accent-2);
+      background: linear-gradient(135deg, var(--bg-2), rgba(168, 85, 247, 0.08));
+      box-shadow: 0 0 25px rgba(168, 85, 247, 0.5);
+      transform: scale(1.05);
+    }
+
+    /* Цикл — кликабельный */
+    .cycle-step {
+      cursor: pointer;
+    }
+    .cycle-step.active {
+      border-color: var(--gold);
+      background: linear-gradient(135deg, var(--bg-2), rgba(251, 191, 36, 0.1));
+      box-shadow: 0 0 25px rgba(251, 191, 36, 0.5);
+      transform: scale(1.05);
+    }
+
+    /* График удержания — строки кликабельные */
+    .retention-row {
+      cursor: pointer;
+      border-radius: 10px;
+      padding: 6px;
+      transition: all 0.3s ease;
+    }
+    .retention-row:hover {
+      background: rgba(0, 212, 255, 0.05);
+    }
+    .retention-row.active .retention-bar {
+      background: linear-gradient(90deg, var(--gold), var(--accent-2));
+      box-shadow: 0 0 20px rgba(251, 191, 36, 0.5);
+    }
+
+    /* Статистика — строки кликабельные */
+    .stat-example-row {
+      cursor: pointer;
+    }
+    .stat-example-row.active {
+      border-left-color: var(--accent);
+      background: linear-gradient(90deg, var(--bg-2), rgba(0, 212, 255, 0.08));
+      box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+    }
+  </style>
 </head>
 <body>
 
@@ -80,7 +299,7 @@
 
   <section class="chapter-section">
     <h2>5.3. Что такое сигналы</h2>
-    <p>Чтобы приблизительно понять, интересен ли материал, система может учитывать различные сигналы. Например:</p>
+    <p>Чтобы приблизительно понять, интересен ли материал, система может учитывать различные сигналы. Например: <em>нажми на сигнал — чтобы выделить.</em></p>
     <div class="signals-grid">
       <div class="signal-item">👁 просмотр</div>
       <div class="signal-item">⏱ время просмотра</div>
@@ -133,7 +352,7 @@
 
   <section class="chapter-section">
     <h2>5.6. Удержание</h2>
-    <p>Удержание показывает, насколько аудитория продолжает смотреть материал. Представь видео:</p>
+    <p>Удержание показывает, насколько аудитория продолжает смотреть материал. Представь видео: <em>нажми на строку, чтобы выделить.</em></p>
     <div class="retention-chart">
       <div class="retention-row"><span class="retention-time">0 сек</span><div class="retention-bar" style="width: 100%;">начало — все здесь</div></div>
       <div class="retention-row"><span class="retention-time">5 сек</span><div class="retention-bar" style="width: 85%;">большая часть ещё здесь</div></div>
@@ -323,7 +542,7 @@
 
   <section class="chapter-section">
     <h2>5.24. Статистика — твой учитель</h2>
-    <p>Допустим, ты сделал десять видео. Получил такие результаты:</p>
+    <p>Допустим, ты сделал десять видео. Получил такие результаты: <em>нажми на строку, чтобы выделить.</em></p>
     <div class="stats-example">
       <div class="stat-example-row"><span>Видео №1</span><span>2 000 просмотров</span></div>
       <div class="stat-example-row"><span>Видео №2</span><span>1 800</span></div>
@@ -351,7 +570,7 @@
 
   <section class="chapter-section">
     <h2>5.26. Тестируй</h2>
-    <p>Создай несколько вариантов. Например:</p>
+    <p>Создай несколько вариантов. Например: <em>нажми на карточку, чтобы выделить.</em></p>
     <div class="test-grid">
       <div class="test-card">
         <h3>ФОРМАТ А</h3>
@@ -526,7 +745,7 @@
 
   <section class="chapter-section">
     <h2>5.40. Формула цифрового продвижения</h2>
-    <p>Теперь можем собрать предыдущие главы вместе.</p>
+    <p>Теперь можем собрать предыдущие главы вместе. <em>Нажми на шаг, чтобы выделить.</em></p>
     <div class="formula-block">
       <div class="formula-step"><strong>ШАГ 1</strong><span>Кто ты?</span></div>
       <div class="formula-arrow">↓</div>
@@ -551,7 +770,7 @@
 
   <section class="chapter-section">
     <h2>5.41. Цикл Богини</h2>
-    <p>Запомни:</p>
+    <p>Запомни: <em>нажми на шаг, чтобы выделить.</em></p>
     <div class="goddess-cycle">
       <div class="cycle-step">СОЗДАЛА</div>
       <div class="cycle-arrow">↓</div>
@@ -592,28 +811,28 @@
 
   <section class="chapter-section">
     <h2>✅ Чек-лист главы 5</h2>
-    <p>□ Я понимаю, что алгоритм — это не враг, а система обработки контента.</p>
-    <p>□ Я понимаю, что не все подписчики видят мой пост.</p>
-    <p>□ Я знаю, какие сигналы могут учитываться платформой.</p>
-    <p>□ Я понимаю, что просмотр — это только начало.</p>
-    <p>□ Я понимаю, что время просмотра и удержание важны.</p>
-    <p>□ Я понимаю, что лайки — не главная метрика.</p>
-    <p>□ Я понимаю, что цель определяет метрику.</p>
-    <p>□ Я понимаю, что охват ≠ продажи.</p>
-    <p>□ Я понимаю, что качество аудитории важнее размера аудитории.</p>
-    <p>□ Я понимаю, что контент должен быть понятным.</p>
-    <p>□ Я использую ключевые слова естественно.</p>
-    <p>□ Я не меняю тему каждые пять минут.</p>
-    <p>□ Я публикую стабильно, а не рывками.</p>
-    <p>□ Я не удаляю пост через час.</p>
-    <p>□ Я анализирую статистику, а не гадаю.</p>
-    <p>□ Я тестирую форматы внутри понятной системы.</p>
-    <p>□ Я понимаю, что контент может работать долго.</p>
-    <p>□ Я сочетаю вечнозелёный и актуальный контент.</p>
-    <p>□ Я не путаю низкие охваты с блокировкой.</p>
-    <p>□ Я соблюдаю правила платформы.</p>
-    <p>□ Я не пытаюсь обмануть алгоритм.</p>
-    <p>□ Я понимаю, что алгоритм — не всё. Продукт, позиционирование, репутация тоже важны.</p>
+    <p class="check-item">Я понимаю, что алгоритм — это не враг, а система обработки контента.</p>
+    <p class="check-item">Я понимаю, что не все подписчики видят мой пост.</p>
+    <p class="check-item">Я знаю, какие сигналы могут учитываться платформой.</p>
+    <p class="check-item">Я понимаю, что просмотр — это только начало.</p>
+    <p class="check-item">Я понимаю, что время просмотра и удержание важны.</p>
+    <p class="check-item">Я понимаю, что лайки — не главная метрика.</p>
+    <p class="check-item">Я понимаю, что цель определяет метрику.</p>
+    <p class="check-item">Я понимаю, что охват ≠ продажи.</p>
+    <p class="check-item">Я понимаю, что качество аудитории важнее размера аудитории.</p>
+    <p class="check-item">Я понимаю, что контент должен быть понятным.</p>
+    <p class="check-item">Я использую ключевые слова естественно.</p>
+    <p class="check-item">Я не меняю тему каждые пять минут.</p>
+    <p class="check-item">Я публикую стабильно, а не рывками.</p>
+    <p class="check-item">Я не удаляю пост через час.</p>
+    <p class="check-item">Я анализирую статистику, а не гадаю.</p>
+    <p class="check-item">Я тестирую форматы внутри понятной системы.</p>
+    <p class="check-item">Я понимаю, что контент может работать долго.</p>
+    <p class="check-item">Я сочетаю вечнозелёный и актуальный контент.</p>
+    <p class="check-item">Я не путаю низкие охваты с блокировкой.</p>
+    <p class="check-item">Я соблюдаю правила платформы.</p>
+    <p class="check-item">Я не пытаюсь обмануть алгоритм.</p>
+    <p class="check-item">Я понимаю, что алгоритм — не всё. Продукт, позиционирование, репутация тоже важны.</p>
   </section>
 
   <section class="chapter-section task-goddess">
@@ -678,6 +897,10 @@
 
 <footer class="footer">
   <p>© 2026 METAIMPERIYA · БОГИНЯ СОЦСЕТЕЙ</p>
+  <p class="footer-sub">Строй систему. Создавай доверие. Решай реальные проблемы.</p>
+  <p style="margin-top:15px">
+    <a href="../metaimperiya.html" style="color: var(--accent); text-decoration: none; font-weight: 600;">← Перейти на METAIMPERIYA</a>
+  </p>
 </footer>
 
 <script src="../script.js"></script>
@@ -686,6 +909,62 @@ window.addEventListener('scroll', () => {
   const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   document.getElementById('progressFill').style.width = (winScroll / height) * 100 + '%';
+});
+
+// Кликабельный чек-лист
+document.querySelectorAll('.check-item').forEach(item => {
+  item.addEventListener('click', () => {
+    item.classList.toggle('done');
+  });
+});
+
+// Кликабельные сигналы
+document.querySelectorAll('.signal-item').forEach(item => {
+  item.addEventListener('click', () => {
+    item.classList.toggle('active');
+  });
+});
+
+// Кликабельные тесты
+document.querySelectorAll('.test-card').forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('active');
+  });
+});
+
+// Кликабельные комбо
+document.querySelectorAll('.combo-item').forEach(item => {
+  item.addEventListener('click', () => {
+    item.classList.toggle('active');
+  });
+});
+
+// Кликабельная формула
+document.querySelectorAll('.formula-step').forEach(step => {
+  step.addEventListener('click', () => {
+    step.classList.toggle('active');
+  });
+});
+
+// Кликабельный цикл
+document.querySelectorAll('.cycle-step').forEach(step => {
+  step.addEventListener('click', () => {
+    step.classList.toggle('active');
+  });
+});
+
+// Кликабельный график удержания
+document.querySelectorAll('.retention-row').forEach(row => {
+  row.addEventListener('click', () => {
+    row.classList.toggle('active');
+  });
+});
+
+// Кликабельная статистика
+document.querySelectorAll('.stat-example-row').forEach(row => {
+  row.addEventListener('click', () => {
+    row.classList.toggle('active');
+  });
 });
 </script>
 </body>
